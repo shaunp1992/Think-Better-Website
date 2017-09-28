@@ -8,11 +8,12 @@
     <title></title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/rough-css.css">
+    <?php include ( './common/common-header.php' ) ; ?>
 </head>
 
 <body>
     
-    <?php include ( './components/nav.php' ) ; ?>
+    <?php include ( './components/navbar.php' ) ; ?>
     
     <div class="page">
         <div class="content">

@@ -1,17 +1,96 @@
 body {
   margin: 0;
 }
-.nav-bar.content {
+.content {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 50px;
 }
-.nav-bar {
-  display: flex;
+@media (max-width: 480px) {
+  .content {
+    padding: 0 25px;
+  }
 }
 .outer-nav-bar {
-  background: purple;
+  background: #652877;
+}
+.nav-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+}
+.nav-bar-logo-container {
+  width: 135px;
+  padding: 14px 0;
+}
+.nav-bar-items-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: auto;
+  left: calc(-67.5px);
+}
+.nav-bar-items-container .nav-item {
+  color: white;
+  font-size: 24px;
+  padding-left: 50px;
+  font-weight: 700;
+}
+@media (max-width: 992px) {
+  .nav-bar-items-container {
+    left: auto;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .bar {
+    position: relative;
+    background: white;
+  }
+  .bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background: white;
+  }
+  .bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background: white;
+  }
+  .bar,
+  .bar:after,
+  .bar:before {
+    width: 20px;
+    height: 3px;
+    border-radius: 1px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-bar-logo-container {
+    width: 110px;
+  }
 }
 .hello {
   color: red;
 }
+/* These are the conditional mixins for the different syntax for IE10 Flexbox*/
