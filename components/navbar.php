@@ -13,7 +13,7 @@
                 <div class="nav-item">Contact</div>
             </div>
             
-            <div class="mobile-menu-button">
+            <div class="mobile-menu-button mobile-menu">
 
                 <div class="bar"></div>
             </div>
