@@ -31,7 +31,7 @@ body {
 }
 .nav-bar-logo-container {
   width: 135px;
-  padding: 14px 0;
+  padding: 8px 0;
 }
 .nav-bar-items-container {
   display: -webkit-box;
@@ -46,8 +46,60 @@ body {
 .nav-bar-items-container .nav-item {
   color: white;
   font-size: 24px;
-  padding-left: 50px;
+  margin-left: 50px;
   font-weight: 700;
+  padding: 28px 0;
+  cursor: pointer;
+}
+.nav-bar-items-container .nav-item:hover {
+  color: #e6bdf2;
+}
+.nav-bar-items-container .nav-item-dropdown {
+  padding-right: 8px;
+}
+.nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-text:after {
+  content: "";
+  position: relative;
+  top: 18px;
+  right: -8px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #f2f2f2;
+}
+.nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-container {
+  position: absolute;
+  background: #652877;
+  padding: 0px 5px;
+  margin-top: 28px;
+  margin-left: -84px;
+  box-shadow: 1px 0px 5px rgba(101, 40, 119, 0.4);
+  height: 0;
+  z-index: -1;
+  transition: all 0.25s;
+  border: 1px solid white;
+  overflow: hidden;
+}
+.nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-container .nav-item-dropdown-item {
+  padding: 10px 10px;
+  text-align: center;
+  border-top: 1px solid white;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-container .nav-item-dropdown-item:first-child {
+  border-top: none;
+}
+.nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-container .nav-item-dropdown-item:hover {
+  color: #e6bdf2;
+}
+.nav-bar-items-container .nav-item-dropdown:hover .nav-item-dropdown-text:after {
+  border-top: 5px solid #e6bdf2;
+}
+.nav-bar-items-container .nav-item-dropdown:hover .nav-item-dropdown-container {
+  height: 200px;
+  z-index: 1;
 }
 .mobile-menu {
   display: none;
@@ -96,7 +148,11 @@ body {
     width: 110px;
   }
 }
+h1 {
+  margin: 0;
+}
 .hello {
   color: red;
 }
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
+/*# sourceMappingURL=main.css.map */
