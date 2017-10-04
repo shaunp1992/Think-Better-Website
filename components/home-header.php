@@ -5,7 +5,7 @@
 
         <div class="home-header-top-logos-container">
             <div class="feel-better-logo-container">
-                <img src="assets/img/feel-better-logo-white.svg">
+                <img src="assets/img/feel-better-logo-white5.svg">
             </div>
             <div class="act-better-logo-container">
                 <img src="assets/img/act-better-logo-white5.svg">
@@ -14,7 +14,7 @@
 
         
         <div class="home-header-logo">
-            <img src="assets/img/think-better-logo-white.svg">
+            <img src="assets/img/think-better-logo-white4.svg">
         </div>
 
 
