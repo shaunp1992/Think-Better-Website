@@ -9,8 +9,8 @@
 	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;filter:url(#AI_Shadow_1);}
 </style>
 <filter  id="AI_Shadow_1" filterUnits="objectBoundingBox">
-	<feGaussianBlur  stdDeviation="2" result="blur" in="SourceAlpha"></feGaussianBlur>
-	<feOffset  dx="4" dy="4" result="offsetBlurredAlpha" in="blur"></feOffset>
+	<feGaussianBlur  stdDeviation="3" result="blur" in="SourceAlpha"></feGaussianBlur>
+	<feOffset  dx="3" dy="3" result="offsetBlurredAlpha" in="blur"></feOffset>
 	<feMerge>
 		<feMergeNode  in="offsetBlurredAlpha"></feMergeNode>
 		<feMergeNode  in="SourceGraphic"></feMergeNode>

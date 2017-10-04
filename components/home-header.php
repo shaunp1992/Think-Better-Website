@@ -8,7 +8,7 @@
                 <img src="assets/img/feel-better-logo-white.svg">
             </div>
             <div class="act-better-logo-container">
-                <img src="assets/img/act-better-logo-white9.svg">
+                <img src="assets/img/act-better-logo-white5.svg">
             </div>
         </div>
 
