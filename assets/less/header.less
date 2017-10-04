@@ -1,6 +1,8 @@
-@desktop-home-header-height: 800px;
+@desktop-home-header-height: 700px;
 @tablet-home-header-height: 600px;
 @mobile-home-header-height: 400px;
+
+@border-width: 50px;
 
 //Both
 .page-header-container{
@@ -13,14 +15,14 @@
     height: @desktop-home-header-height;
 }
 
-.page-header {
+.page-header-background {
     background: linear-gradient(@purple2, @purple);
     position: absolute;
     z-index: 1;
 }
 
 //Home Page Header
-.home-header{
+.home-header-background{
     width: 200%;
     height: 1200px;
     top: calc((1200px - @desktop-home-header-height + 10px) * -1);
@@ -29,6 +31,37 @@
     border: 50px solid @purple-border;
     box-shadow: 1px 2px 5px 4px rgba(0, 0, 0, 0.15);
 }
+
+.home-header-content {
+    height: ~"calc(100% - @{logo-height} - @{border-width} - 10px)";
+    top: @logo-height;
+    position: relative;
+    z-index: 1;
+    .flex();
+    .flex-direction(column);
+    .justify-content(center);
+    .align-items(center);
+    
+    .home-header-logo {
+        width: 350px;
+    }
+
+    .home-header-top-logos-container{
+        .flex();
+        .justify-content(space-between);
+        .align-items(center);
+        width: 600px;
+        
+        .feel-better-logo-container{
+            width: 130px;
+        }
+        
+        .act-better-logo-container{
+            width: 150px;
+        }
+    }
+}
+
 
 
 

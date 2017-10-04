@@ -40,6 +40,7 @@ body div {
 }
 .nav-bar-logo-container {
   width: 135px;
+  height: 86px;
   padding: 8px 0;
 }
 .nav-bar-items-container {
@@ -79,13 +80,13 @@ body div {
   position: absolute;
   background: #652877;
   padding: 0px 5px;
-  margin-top: 28px;
+  margin-top: 26px;
   margin-left: -84px;
   box-shadow: 1px 0px 5px rgba(101, 40, 119, 0.4);
   height: 0;
   z-index: -1;
   transition: all 0.25s;
-  border: 1px solid white;
+  border: 1px solid #652877;
   overflow: hidden;
 }
 .nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-container .nav-item-dropdown-item {
@@ -109,6 +110,8 @@ body div {
 .nav-bar-items-container .nav-item-dropdown:hover .nav-item-dropdown-container {
   height: 200px;
   z-index: 1;
+  border: 1px solid white;
+  margin-top: 28px;
 }
 .mobile-menu {
   display: none;
@@ -199,21 +202,64 @@ body div {
   overflow-x: hidden;
 }
 .home-header-container {
-  height: 800px;
+  height: 700px;
 }
-.page-header {
+.page-header-background {
   background: linear-gradient(#7E3195, #652877);
   position: absolute;
   z-index: 1;
 }
-.home-header {
+.home-header-background {
   width: 200%;
   height: 1200px;
-  top: calc(-410px);
+  top: calc(-510px);
   left: -50%;
   border-radius: 0 0 100% 100%;
   border: 50px solid #d0bed6;
   box-shadow: 1px 2px 5px 4px rgba(0, 0, 0, 0.15);
+}
+.home-header-content {
+  height: calc(100% - 86px - 50px - 10px);
+  top: 86px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.home-header-content .home-header-logo {
+  width: 350px;
+}
+.home-header-content .home-header-top-logos-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 600px;
+}
+.home-header-content .home-header-top-logos-container .feel-better-logo-container {
+  width: 130px;
+}
+.home-header-content .home-header-top-logos-container .act-better-logo-container {
+  width: 150px;
 }
 @media (max-width: 768px) {
   .home-header-container {
@@ -236,4 +282,3 @@ body div {
   }
 }
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
-/*# sourceMappingURL=main.css.map */

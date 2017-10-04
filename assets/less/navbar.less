@@ -1,4 +1,6 @@
 @logo-width: 135px;
+@logo-height: 86px;
+
 @logo-width-mobile: 110px;
 
 .outer-nav-bar{
@@ -18,6 +20,7 @@
 
 .nav-bar-logo-container{
     width: @logo-width;
+    height: @logo-height; //including padding
     padding: 8px 0;
 }
 
@@ -54,13 +57,13 @@
             position: absolute;
             background: @purple;
             padding: 0px 5px;
-            margin-top: 28px;
+            margin-top: 26px;
             margin-left: -84px;
             box-shadow: 1px 0px 5px rgba(101, 40, 119, 0.4);
             height: 0;
             z-index: -1;
             transition: all 0.25s;
-            border: 1px solid white;
+            border: 1px solid @purple;
             overflow: hidden;
             .nav-item-dropdown-item{
                 padding: 10px 10px;
@@ -86,6 +89,8 @@
             .nav-item-dropdown-container{
                 height: 200px;
                 z-index: 1;
+                border: 1px solid white;
+                 margin-top: 28px;
             }
         }
     }
