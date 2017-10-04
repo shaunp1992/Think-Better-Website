@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".mobile-menu-button").click(function(){$(".mobile-menu-container").toggleClass("open")})});
