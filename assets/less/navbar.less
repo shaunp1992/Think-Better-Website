@@ -1,7 +1,9 @@
-@logo-width: 135px;
-@logo-height: 86px;
+@nav-bar-height: 86px;
+@nav-bar-height-mobile: 74px;
 
-@logo-width-mobile: 110px;
+@logo-width: 135px;
+@logo-width-mobile: 100px;
+
 
 .outer-nav-bar{
     background: @purple;
@@ -16,11 +18,11 @@
     .justify-content(space-between);
     .align-items(center);
     font-family: 'Amatic SC', cursive;
+    height: @nav-bar-height; //including padding
 }
 
 .nav-bar-logo-container{
     width: @logo-width;
-    height: @logo-height; //including padding
     padding: 8px 0;
 }
 
@@ -33,7 +35,7 @@
     .nav-item{
         color: white;
         font-size: 24px;
-        margin-left: 50px;
+        margin: 0 25px;
         font-weight: 700;
         padding: 28px 0;
         cursor: pointer;
@@ -112,7 +114,13 @@
     .nav-bar-items-container{
         left: auto;
         margin: 0;
+        
+        .nav-item{
+            margin: 0 0 0 50px;
+        }
     }
+    
+    
 }
 
 @media (max-width: 768px){
@@ -187,9 +195,14 @@
 }
 
 @media (max-width: 480px){ 
-
+    
+    .nav-bar{
+        height: @nav-bar-height-mobile; //including padding
+    }
+    
     .nav-bar-logo-container{
         width: @logo-width-mobile;
+        
     }
     
     .mobile-menu-container {

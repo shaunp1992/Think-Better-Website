@@ -17,6 +17,21 @@ body div{
     padding: 0 50px;
 }
 
+.button{
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
+    font-size: 24px;
+    &.button-white{
+        background: white;
+    }
+    
+    .button-text-purple{
+        color: @purple;
+    }
+}
+
 
 @media (max-width: 1280px){
 
@@ -31,12 +46,21 @@ body div{
 }
 
 @media (max-width: 768px){
+    
+    .button{
+        font-size: 18px;
+    }
 
 }
 
 @media (max-width: 480px){ 
     .content{
         padding: 0 25px;
+    }
+    
+    .button{
+        padding: 3px 15px;
+        font-size: 18px;
     }
 }
 

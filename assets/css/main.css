@@ -12,9 +12,31 @@ body div {
   margin-right: auto;
   padding: 0 50px;
 }
+.button {
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 600;
+  font-size: 24px;
+}
+.button.button-white {
+  background: white;
+}
+.button .button-text-purple {
+  color: #652877;
+}
+@media (max-width: 768px) {
+  .button {
+    font-size: 18px;
+  }
+}
 @media (max-width: 480px) {
   .content {
     padding: 0 25px;
+  }
+  .button {
+    padding: 3px 15px;
+    font-size: 18px;
   }
 }
 .outer-nav-bar {
@@ -37,10 +59,10 @@ body div {
   -webkit-align-items: center;
   align-items: center;
   font-family: 'Amatic SC', cursive;
+  height: 86px;
 }
 .nav-bar-logo-container {
   width: 135px;
-  height: 86px;
   padding: 8px 0;
 }
 .nav-bar-items-container {
@@ -56,7 +78,7 @@ body div {
 .nav-bar-items-container .nav-item {
   color: white;
   font-size: 24px;
-  margin-left: 50px;
+  margin: 0 25px;
   font-weight: 700;
   padding: 28px 0;
   cursor: pointer;
@@ -120,6 +142,9 @@ body div {
   .nav-bar-items-container {
     left: auto;
     margin: 0;
+  }
+  .nav-bar-items-container .nav-item {
+    margin: 0 0 0 50px;
   }
 }
 @media (max-width: 768px) {
@@ -185,8 +210,11 @@ body div {
   }
 }
 @media (max-width: 480px) {
+  .nav-bar {
+    height: 74px;
+  }
   .nav-bar-logo-container {
-    width: 110px;
+    width: 100px;
   }
   .mobile-menu-container {
     top: 74px;
@@ -202,27 +230,93 @@ body div {
   overflow-x: hidden;
 }
 .home-header-container {
-  height: 700px;
+  height: 750px;
 }
 .page-header-background {
   background: linear-gradient(#7E3195, #652877);
   position: absolute;
   z-index: 1;
-}
-.home-header-background {
   width: 200%;
   height: 1200px;
-  top: calc(-510px);
+  bottom: 10px;
   left: -50%;
   border-radius: 0 0 100% 100%;
   border: 50px solid #d0bed6;
   box-shadow: 1px 2px 5px 4px rgba(0, 0, 0, 0.15);
 }
-.home-header-content {
+.page-header-word-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.page-header-word-background .header-background-word {
+  position: absolute;
+  font-size: 18px;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  opacity: 0.15;
+}
+.page-header-word-background .header-background-word:nth-child(1) {
+  top: 35%;
+  left: 10%;
+  -ms-transform: rotate(10deg);
+  /* IE 9 */
+  -webkit-transform: rotate(10deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+}
+.page-header-word-background .header-background-word:nth-child(2) {
+  top: 50%;
+  left: 20%;
+  -ms-transform: rotate(-15deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-15deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-15deg);
+}
+.page-header-word-background .header-background-word:nth-child(3) {
+  top: 75%;
+  left: 12%;
+  -ms-transform: rotate(-5deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-5deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-5deg);
+}
+.page-header-word-background .header-background-word:nth-child(4) {
+  top: 25%;
+  right: 15%;
+  -ms-transform: rotate(5deg);
+  /* IE 9 */
+  -webkit-transform: rotate(5deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(5deg);
+}
+.page-header-word-background .header-background-word:nth-child(5) {
+  top: 50%;
+  right: 22.5%;
+  -ms-transform: rotate(-10deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-10deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-10deg);
+}
+.page-header-word-background .header-background-word:nth-child(6) {
+  top: 72.5%;
+  right: 17.5%;
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(20deg);
+}
+.header-content {
   height: calc(100% - 86px - 50px - 10px);
   top: 86px;
   position: relative;
   z-index: 1;
+}
+.home-header-content {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -238,7 +332,7 @@ body div {
   -webkit-align-items: center;
   align-items: center;
 }
-.home-header-content .home-header-logo {
+.home-header-content .home-header-logo-container {
   width: 350px;
 }
 .home-header-content .home-header-top-logos-container {
@@ -253,32 +347,126 @@ body div {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  width: 600px;
+  width: 500px;
 }
 .home-header-content .home-header-top-logos-container .feel-better-logo-container {
-  width: 145px;
+  width: 125px;
 }
 .home-header-content .home-header-top-logos-container .act-better-logo-container {
-  width: 150px;
+  width: 115px;
+}
+.header-subtitle {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 36px;
+}
+.home-header-subtitle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.home-header-subtitle .home-header-subtitle-line-one {
+  margin-right: 50px;
+}
+.home-header-subtitle .home-header-subtitle-line-two {
+  text-align: right;
+}
+.home-header-button {
+  margin: 35px 0px;
+}
+@media (max-width: 992px) {
+  .page-header-word-background .header-background-word:nth-child(1) {
+    left: 7.5%;
+  }
+  .page-header-word-background .header-background-word:nth-child(2) {
+    left: 17.5%;
+  }
+  .page-header-word-background .header-background-word:nth-child(3) {
+    top: 67.5%;
+    left: 9%;
+  }
+  .page-header-word-background .header-background-word:nth-child(4) {
+    top: 35%;
+    right: 10%;
+  }
+  .page-header-word-background .header-background-word:nth-child(5) {
+    top: 50%;
+    right: 15%;
+  }
+  .page-header-word-background .header-background-word:nth-child(6) {
+    top: 70%;
+    right: 10%;
+  }
 }
 @media (max-width: 768px) {
+  .page-header-background {
+    height: 800px;
+  }
+  .header-subtitle {
+    font-size: 24px;
+  }
   .home-header-container {
     height: 600px;
   }
-  .home-header {
-    height: 800px;
-    top: calc(-210px);
+  .home-header-content .home-header-top-logos-container {
+    display: none;
+  }
+  .page-header-word-background .header-background-word {
+    font-size: 14px;
+  }
+  .page-header-word-background .header-background-word:nth-child(1) {
+    top: 10%;
+    left: 5%;
+  }
+  .page-header-word-background .header-background-word:nth-child(2) {
+    top: 35%;
+    left: 4.5%;
+  }
+  .page-header-word-background .header-background-word:nth-child(3) {
+    top: 57.5%;
+    left: 5%;
+  }
+  .page-header-word-background .header-background-word:nth-child(4) {
+    top: 7.5%;
+    right: 10%;
+  }
+  .page-header-word-background .header-background-word:nth-child(5) {
+    top: 30%;
+    right: 5%;
+  }
+  .page-header-word-background .header-background-word:nth-child(6) {
+    top: 57.5%;
+    right: 7.5%;
   }
 }
 @media (max-width: 480px) {
-  .home-header-container {
-    height: 400px;
+  .page-header-background {
+    height: 600px;
   }
-  .home-header {
-    height: 800px;
-    top: calc(-410px);
-    width: 240%;
-    left: -72%;
+  .header-content {
+    height: calc(100% - 74px - 50px - 10px);
+    top: 74px;
+  }
+  .header-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .home-header-subtitle .home-header-subtitle-line-one {
+    margin-right: 25px;
+  }
+  .home-header-container {
+    height: 425px;
+  }
+  .home-header-content .home-header-logo-container {
+    width: 200px;
+  }
+  .page-header-word-background .header-background-word {
+    display: none;
   }
 }
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
