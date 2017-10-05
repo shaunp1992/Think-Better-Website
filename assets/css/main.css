@@ -248,6 +248,7 @@ body div {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 .page-header-word-background .header-background-word {
   position: absolute;
@@ -334,6 +335,7 @@ body div {
 }
 .home-header-content .home-header-logo-container {
   width: 350px;
+  height: 262px;
 }
 .home-header-content .home-header-top-logos-container {
   display: -webkit-box;
@@ -464,9 +466,13 @@ body div {
   }
   .home-header-content .home-header-logo-container {
     width: 200px;
+    height: 165.25px;
   }
   .page-header-word-background .header-background-word {
     display: none;
+  }
+  .home-header-button {
+    margin: 15px 0px;
   }
 }
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
