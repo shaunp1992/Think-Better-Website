@@ -11,17 +11,17 @@
             <div class="footer-social-icons-container">
                 <div class="footer-social-item">
                     <img class="footer-social-item-background" src="../assets/img/social-background.svg">
-                    <img class="footer-social-icon" src="../assets/img/facebook-icon.svg">
+                    <img class="footer-social-icon" src="assets/img/facebook-icon.svg">
                 </div>
                 
                 <div class="footer-social-item">
                     <img class="footer-social-item-background" src="../assets/img/social-background.svg">
-                    <img class="footer-social-icon" src="../assets/img/linkedin-icon.svg">
+                    <img class="footer-social-icon" src="assets/img/linkedin-icon.svg">
                 </div>
                 
                 <div class="footer-social-item">
                     <img class="footer-social-item-background" src="../assets/img/social-background.svg">
-                     <img class="footer-social-icon" src="../assets/img/youtube-icon.svg">
+                     <img class="footer-social-icon" src="assets/img/youtube-icon.svg">
                 </div>
             </div>
         </div>
