@@ -43,6 +43,11 @@
    flex-wrap:@wrap; 
 }
 
+.flex-basis(@basis){
+     -webkit-flex-basis: @basis; /* Safari 6.1+ */
+    flex-basis: @basis;
+}
+
 
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
 .ms-flex-justify(@msJustify) when (@msJustify = space-between)  {
