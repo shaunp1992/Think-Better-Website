@@ -10,17 +10,29 @@
             <div class="footer-section-title">Follow Us:</div>
             <div class="footer-social-icons-container">
                 <div class="footer-social-item">
+<<<<<<< HEAD
                     <img class="footer-social-item-background" src="assets/img/social-background.svg">
+=======
+                    <img class="footer-social-item-background" src="../assets/img/social-background.svg">
+>>>>>>> 73a339d883bbd4eca6ebd2f1e6c10eb01f099eaf
                     <img class="footer-social-icon" src="assets/img/facebook-icon.svg">
                 </div>
                 
                 <div class="footer-social-item">
+<<<<<<< HEAD
                     <img class="footer-social-item-background" src="assets/img/social-background.svg">
+=======
+                    <img class="footer-social-item-background" src="../assets/img/social-background.svg">
+>>>>>>> 73a339d883bbd4eca6ebd2f1e6c10eb01f099eaf
                     <img class="footer-social-icon" src="assets/img/linkedin-icon.svg">
                 </div>
                 
                 <div class="footer-social-item">
+<<<<<<< HEAD
                     <img class="footer-social-item-background" src="assets/img/social-background.svg">
+=======
+                    <img class="footer-social-item-background" src="../assets/img/social-background.svg">
+>>>>>>> 73a339d883bbd4eca6ebd2f1e6c10eb01f099eaf
                      <img class="footer-social-icon" src="assets/img/youtube-icon.svg">
                 </div>
             </div>
