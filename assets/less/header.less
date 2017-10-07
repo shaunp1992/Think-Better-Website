@@ -2,6 +2,10 @@
 @home-header-height-tablet: 600px;
 @home-header-height-mobile: 425px;
 
+@general-header-height-desktop: 600px;
+@general-header-height-tablet: 450px;
+@general-header-height-mobile: 425px;
+
 @header-curl-desktop: 1200px;
 @header-curl-tablet: 800px;
 @header-curl-mobile: 600px;
@@ -33,6 +37,10 @@
     height: @home-header-height-desktop;
 }
 
+.general-header-container{
+    height: @general-header-height-desktop;
+}
+
 .page-header-background {
     background: linear-gradient(@purple2, @purple);
     position: absolute;
@@ -46,7 +54,7 @@
     box-shadow: 1px 2px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
-.page-header-word-background {
+.header-word-background {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -89,8 +97,6 @@
             .rotate-word(20deg);
         }
     }
-    
-    
 }
 
 .header-content{
@@ -100,7 +106,7 @@
     z-index: 1;
 }
 
-.home-header-content {
+.header-content{
     .flex();
     .flex-direction(column);
     .justify-content(center);
@@ -130,26 +136,42 @@
 }
 
 .header-subtitle{
-    .amatic-font();
-    color: white;
-    font-size: 36px;
-}
-
-.home-header-subtitle{
     .flex();
     .flex-direction(column);
-    
-    .home-header-subtitle-line-one{
+    .amatic-font();
+    color: white;
+    .header-subtitle-line-one{
         margin-right: 50px;
     }
     
-    .home-header-subtitle-line-two{
+    &.home-header-subtitle{
+        font-size: 36px;
+    }
+
+    &.general-header-subtitle{
+        font-size: 30px;
+    }
+    
+    .header-subtitle-line-two{
         text-align: right;
     }
 }
 
 .home-header-button{
     margin: 35px 0px;
+}
+
+.general-header-title-container{
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 10px;
+    .general-header-title{
+        .amatic-font();
+        color: white;
+        weight: 700;
+        font-size: 104px;
+        text-shadow: 5px 3px rgba(0, 0, 0, 0.15);
+    }
 }
 
 @media (max-width: 1280px){
@@ -161,7 +183,14 @@
 }
 
 @media (max-width: 992px){ 
-    .page-header-word-background {
+    .general-header-title-container{
+        max-width: 600px;
+        .general-header-title{
+            font-size: 84px;
+        }
+    }
+    
+    .header-word-background {
         .header-background-word{
             &:nth-child(1){
                 left: 7.5%;
@@ -191,16 +220,34 @@
 
 @media (max-width: 768px){
     
+    .general-header-title-container{
+        max-width: 340px;
+        .general-header-title{
+            font-size: 54px;
+        }
+    }
+    
     .page-header-background {
         height: @header-curl-tablet;
     }
     
     .header-subtitle{
-        font-size: 24px;
+        &.home-header-subtitle{
+            font-size: 24px;
+        }
+
+        &.general-header-subtitle{
+            font-size: 20px;
+        }
+        
     }
     
     .home-header-container{
         height: @home-header-height-tablet;
+    }
+    
+    .general-header-container{
+        height: @general-header-height-tablet;
     }
     
     .home-header-content {
@@ -209,7 +256,7 @@
         }
     }
     
-    .page-header-word-background {
+    .header-word-background {
         .header-background-word{
             font-size: 14px;
             &:nth-child(1){
@@ -251,13 +298,17 @@
         top: @nav-bar-height-mobile;
     }
     
-     .header-subtitle{
-        font-weight: 600;
-        font-size: 18px;
+    .general-header-title-container{
+        .general-header-title{
+            font-weight: 700;
+            text-shadow: 3px 1px rgba(0, 0, 0, 0.15);
+        }
     }
     
-    .home-header-subtitle{
-        .home-header-subtitle-line-one{
+    .header-subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        .header-subtitle-line-one{
             margin-right: 25px;
         }
     }
@@ -266,16 +317,43 @@
         height: @home-header-height-mobile;
     }
     
-    .home-header-content {
+    .general-header-container{
+        height: @general-header-height-mobile;
+    }
+    
+    .home-header-content{
         .home-header-logo-container{
             width: @header-logo-width-mobile;
             height: @header-logo-height-mobile;
         }
     }
     
-    .page-header-word-background {
+    .header-word-background{
         .header-background-word{
-            display: none;
+            font-size: 12px;
+            &:nth-child(1){
+                top: 5%;
+                left: 5%;
+            }
+            &:nth-child(2){
+                top: 55%;
+                left: 4.5%;
+            }
+            &:nth-child(3){
+                top: 4%;
+                left: 45%;
+            }
+            &:nth-child(4){
+                top: 7.5%;
+                right: 10%;
+            }
+            &:nth-child(5){ 
+                top: 45%;
+                right: 5%;
+            }
+            &:nth-child(6){ 
+               display: none;
+            }
         }
     }
     

@@ -3,7 +3,7 @@
     
     <div class="home-header-content header-content content">
 
-        <div class="page-header-word-background">
+        <div class="header-word-background">
             <div class="header-background-word">Mindfulness</div>
             <div class="header-background-word">Refocus</div>
             <div class="header-background-word">Self Confidence</div>
@@ -27,8 +27,8 @@
         </div>
 
         <div class="home-header-subtitle header-subtitle">
-            <span class="home-header-subtitle-line-one">Learn everyday tools to help you be...</span>
-            <span class="home-header-subtitle-line-two">The best version of you</span>
+            <span class="header-subtitle-line-one">Learn everyday tools to help you be...</span>
+            <span class="header-subtitle-line-two">The best version of you</span>
         </div>
         
         <div class="home-header-button button button-white">
@@ -36,6 +36,4 @@
         </div>
         
     </div>
-
-    
 </div>
