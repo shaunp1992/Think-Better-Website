@@ -10,7 +10,7 @@
                 <div class="nav-item nav-item-dropdown">
                     <div class="nav-item-dropdown-text">Services</div>
                     <div class="nav-item-dropdown-container">
-                        <div class="nav-item-dropdown-item" ><a href="/workshop.php">Think Better Workshops</a></div>
+                        <div class="nav-item-dropdown-item" ><a href="workshop.php">Think Better Workshops</a></div>
                         <div class="nav-item-dropdown-item"><a href="/work-workshop.php">Think Better Workshops at Work</a></div>
                         <div class="nav-item-dropdown-item"><a href="/coaching.php">Cognitive Beahaviour Coaching</a></div>
                         <div class="nav-item-dropdown-item"><a href="/therapy.php">Cognitive Behaviour Therapy</a></div>
