@@ -6,19 +6,19 @@
             </div>
 
             <div class="nav-bar-items-container desktop-menu">
-                <div class="nav-item">Home</div>
+                <div class="nav-item"><a href="/home.php">Home</a></div>
                 <div class="nav-item nav-item-dropdown">
                     <div class="nav-item-dropdown-text">Services</div>
                     <div class="nav-item-dropdown-container">
-                        <div class="nav-item-dropdown-item">Think Better Workshops</div>
-                        <div class="nav-item-dropdown-item">Think Better Workshops at Work</div>
-                        <div class="nav-item-dropdown-item">Cognitive Beahaviour Coaching</div>
-                        <div class="nav-item-dropdown-item">Cognitive Behaviour Therapy</div>
+                        <div class="nav-item-dropdown-item" ><a href="/workshop.php">Think Better Workshops</a></div>
+                        <div class="nav-item-dropdown-item"><a href="/work-workshop.php">Think Better Workshops at Work</a></div>
+                        <div class="nav-item-dropdown-item"><a href="/coaching.php">Cognitive Beahaviour Coaching</a></div>
+                        <div class="nav-item-dropdown-item"><a href="/therapy.php">Cognitive Behaviour Therapy</a></div>
                     </div>
                 </div>
-                <div class="nav-item">About</div>
-                <div class="nav-item">Blog</div>
-                <div class="nav-item">Contact</div>
+                <div class="nav-item"><a href="/about.php">About</a></div>
+                <div class="nav-item"><a href="/blog.php">Blog</a></div>
+                <div class="nav-item"><a href="/contact.php">Contact</a></div>
             </div>
             
             <div class="mobile-menu-button mobile-menu">
@@ -26,19 +26,19 @@
             </div>
             
             <div class="mobile-menu-container mobile-menu">
-                <div class="nav-item">Home</div>
+                <div class="nav-item"><a href="/home.php">Home</a></div>
                 <div class="nav-item">Services</div>
                 <div class="nav-item-dropdown">
                     <div class="nav-item-dropdown-container">
-                        <div class="nav-item-dropdown-item">Think Better Workshops</div>
-                        <div class="nav-item-dropdown-item">Think Better Workshops at Work</div>
-                        <div class="nav-item-dropdown-item">Cognitive Beahaviour Coaching</div>
-                        <div class="nav-item-dropdown-item">Cognitive Behaviour Therapy</div>
+                         <div class="nav-item-dropdown-item" ><a href="/workshop.php">Think Better Workshops</a></div>
+                        <div class="nav-item-dropdown-item"><a href="/work-workshop.php">Think Better Workshops at Work</a></div>
+                        <div class="nav-item-dropdown-item"><a href="/coaching.php">Cognitive Beahaviour Coaching</a></div>
+                        <div class="nav-item-dropdown-item"><a href="/therapy.php">Cognitive Behaviour Therapy</a></div>
                     </div>
                 </div>
-                <div class="nav-item">About</div>
-                <div class="nav-item">Blog</div>
-                <div class="nav-item">Contact</div>
+                <div class="nav-item"><a href="/about.php">About</a></div>
+                <div class="nav-item"><a href="/blog.php">Blog</a></div>
+                <div class="nav-item"><a href="/contact.php">Contact</a></div>
             </div>
 
         </div>

@@ -8,10 +8,14 @@
         <div class="footer-socials-section footer-section">
             <div class="footer-section-title">Follow Us:</div>
             <div class="footer-social-icons-container">
-                <div class="footer-social-item">
-                    <img class="footer-social-item-background" src="assets/img/social-background.svg">
-                    <img class="footer-social-icon" src="assets/img/facebook-icon.svg">
-                </div>
+                <a href="https://www.facebook.com/bevthinkbetter/">
+                    <div class="footer-social-item">
+
+                        <img class="footer-social-item-background" src="assets/img/social-background.svg">
+                        <img class="footer-social-icon" src="assets/img/facebook-icon.svg">
+
+                    </div>
+                </a>
                 
                 <div class="footer-social-item">
                     <img class="footer-social-item-background" src="assets/img/social-background.svg">
