@@ -1,0 +1,84 @@
+.better-points-container{
+    .flex();
+    .better-points-item-container{
+        .flex();
+        .flex-direction(column);
+        .align-items(center);
+        text-align: center;
+        padding: 0px 40px;
+        
+        .better-points-item-icon-container {
+            position: relative;
+            .better-points-item-background {
+                position: absolute;
+                bottom: 0;
+                width: 50px;
+            }
+        }
+    
+        .better-points-item-title{
+            padding: 15px 0 20px;
+        }
+        
+    }
+}
+
+.think-better-point{
+    &.better-points-item-container{
+        .better-points-item-icon-container {
+            
+            .better-points-item-icon {
+                width: 25px;
+            }
+            
+            .better-points-item-background {
+                left: -14px;
+            }
+        }
+    }
+    
+    .better-points-item-title{
+        color: @purple;
+    }
+}
+
+.feel-better-point{
+    &.better-points-item-container{
+        .better-points-item-icon-container {
+            .better-points-item-icon {
+                width: 22px;
+            }
+            
+            .better-points-item-background {
+                left: -7px;
+            }
+        }
+    }
+    
+    .better-points-item-title{
+        color: @green;
+    }
+}
+
+.act-better-point{
+    
+    
+    &.better-points-item-container{
+        .better-points-item-icon-container {
+            
+            .better-points-item-icon {
+                width: 32px;
+            }
+            
+            .better-points-item-background {
+                left: -12px;
+                height: 60px;
+            }
+        }
+    }
+    
+    .better-points-item-title{
+        color: @orange;
+    }
+}
+

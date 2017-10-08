@@ -1,5 +1,5 @@
 <div class="outer-nav-bar page">
-        <div class="nav-bar content">
+        <div class="nav-bar nav-footer-content">
             
             <div class="nav-bar-logo-container">
                 <img src="assets/img/logo-white.svg">

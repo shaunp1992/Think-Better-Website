@@ -17,22 +17,25 @@
     <?php include ( './components/home-header.php' ) ; ?>
     
     <div class="page">
-        <div class="content">
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
+        
+        <div class="section">
+             <div class="content">
+                <?php include ( './components/section-title.php' ) ; ?>
+                <?php include ( './components/better-points.php' ) ; ?>
+
+            </div>
         </div>
+        
+        <div class="section subtle-purple-section">
+             <div class="content">
+                <?php include ( './components/section-title.php' ) ; ?>
+                <?php include ( './components/services.php' ) ; ?>
+
+            </div>
+        </div>
+            
+ 
+        
     </div>
     
     <?php include ( './components/footer.php' ) ; ?>
