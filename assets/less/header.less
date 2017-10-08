@@ -104,6 +104,8 @@
     top: @nav-bar-height;
     position: relative;
     z-index: 1;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header-content{
@@ -168,7 +170,7 @@
     .general-header-title{
         .amatic-font();
         color: white;
-        weight: 700;
+        font-weight: 700;
         font-size: 104px;
         text-shadow: 5px 3px rgba(0, 0, 0, 0.15);
     }
@@ -336,12 +338,13 @@
                 left: 5%;
             }
             &:nth-child(2){
-                top: 55%;
+                top: 50%;
                 left: 4.5%;
             }
             &:nth-child(3){
-                top: 4%;
-                left: 45%;
+                top: 1%;
+                left: 55%;
+                display: none;
             }
             &:nth-child(4){
                 top: 7.5%;

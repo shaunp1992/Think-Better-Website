@@ -1,6 +1,5 @@
 <div class="footer-container page">
-        
-    <div class="footer-content content">
+    <div class="footer-content nav-footer-content">
         <div class="footer-contact-section footer-section">
             <div class="footer-section-title">Contact Us:</div>
             <div class="footer-section-item">Phone: 087 9678149</div>

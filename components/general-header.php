@@ -1,7 +1,7 @@
 <div class="general-header-container page-header-container">
     <div class="general-header-background page-header-background"></div>    
     
-    <div class="general-header-content header-content content">
+    <div class="general-header-content header-content">
 
         <div class="header-word-background">
             <div class="header-background-word">Mindfulness</div>
@@ -13,7 +13,7 @@
         </div>
         
             <div class="general-header-title-container">
-                <div class="general-header-title">Cognitive Behaviour Therapy</div>
+                <div class="general-header-title">Cognitive Behaviour Coaching</div>
             </div>
 
             <div class="general-header-subtitle header-subtitle">

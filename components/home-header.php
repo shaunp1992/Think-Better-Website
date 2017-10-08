@@ -1,7 +1,7 @@
 <div class="home-header-container page-header-container">
     <div class="home-header-background page-header-background"></div>    
     
-    <div class="home-header-content header-content content">
+    <div class="home-header-content header-content">
 
         <div class="header-word-background">
             <div class="header-background-word">Mindfulness</div>
@@ -27,8 +27,8 @@
         </div>
 
         <div class="home-header-subtitle header-subtitle">
-            <span class="header-subtitle-line-one">Learn everyday tools to help you be...</span>
-            <span class="header-subtitle-line-two">The best version of you</span>
+            <div class="header-subtitle-line-one">Learn everyday tools to help you be...</div>
+            <div class="header-subtitle-line-two">The best version of you</div>
         </div>
         
         <div class="home-header-button button button-white">

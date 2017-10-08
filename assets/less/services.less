@@ -1,0 +1,156 @@
+.services-outer-container{
+    position: relative;
+}
+
+.services-container{
+    .flex() !important;
+    .flex-wrap(wrap);
+    .justify-content(center);
+    
+    .service-item{
+        flex: 0 0 33.333%;
+        .flex();
+        .flex-direction(column);
+        .align-items(center);
+        text-align: center;
+        .service-item-inner{
+            .flex();
+            .flex-direction(column);
+            max-width: 340px;
+            height: 100%;
+            background: white;
+            margin: 0px 10px 60px;
+            padding: 30px 30px 50px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.15);
+            
+            .service-item-title.container-title {
+                min-height: 70px;
+                .flex();
+                .justify-content(center);
+                .align-items(center);
+            }
+            .service-item-subtitle{
+                color: @purple;
+                margin-top: 10px;
+            }
+
+            .service-item-list-container{
+                flex: 1;
+                .service-item-list{
+                    margin: 30px 0px;
+                    padding: 0 0 0 20px;
+                    .service-item-list-item{
+                        color: @purple;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            
+            .service-item-button-container{
+                .flex();
+                .justify-content(center);
+            }
+        }
+        
+        &:last-child{
+            .service-item-inner{
+                margin-bottom: 2px;    
+            }
+        }
+    }
+}
+
+.service-item-icon-container{
+    
+    .workshop-item-icon{
+        width: 65px !important;
+        min-height: 80px;
+        margin: 0 auto;
+    }
+    
+    .coaching-item-icon{
+        width: 65px !important;
+        min-height: 80px;
+        margin: 0 auto;
+    }
+    
+    .therapy-item-icon{
+        width: 80px !important;
+        min-height: 80px;
+        margin: 0 auto;
+    }
+}
+
+
+.services-arrow-icon-container {
+    position: absolute;
+    bottom: 300px;
+    left: 80px;
+//    left: 10px;
+    max-width: ~"calc(33% - 80px)";
+    .flex();
+    .flex-direction(column);
+    .align-items(flex-end);
+    .services-arrow-icon {
+        width: 100px;
+        margin-top: 30px;
+    }
+}
+
+.services-leaning-icon-container{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    right: ~"calc(50% - 170px - 200px)";
+}
+
+@media (max-width: 1280px){
+    .services-arrow-icon-container, .services-leaning-icon-container{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){ 
+
+}
+
+@media (max-width: 992px){ 
+    
+}
+
+@media (max-width: 768px){
+    .services-container{
+        .service-item{
+            flex: 0 0 100%;
+        }
+    }
+    
+    .service-item-icon-container{
+    
+    .workshop-item-icon{
+        width: 25px;
+        min-height: 20px;
+    }
+    
+    .coaching-item-icon{
+        width: 65px;
+        min-height: 80px;
+    }
+    
+    .therapy-item-icon{
+        width: 80px;
+        min-height: 80px;
+    }
+}
+}
+
+@media (max-width: 480px){ 
+
+}
+
+@media (max-width:320px){ 
+
+}
+
+
