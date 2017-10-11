@@ -4,10 +4,10 @@
     <div class="general-header-content header-content">
 
         <div class="header-word-background">
-            <div class="header-background-word">Mindfulness</div>
+            <div class="header-background-word">Well Being</div>
             <div class="header-background-word">Refocus</div>
-            <div class="header-background-word">Self Confidence</div>
-            <div class="header-background-word">Relax</div>
+            <div class="header-background-word">Self Acceptance</div>
+            <div class="header-background-word">Resilience</div>
             <div class="header-background-word">Refresh</div>
             <div class="header-background-word">Best Self</div>
         </div>

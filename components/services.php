@@ -88,7 +88,7 @@
                 <div class="service-item-icon-container">
                     <img class="workshop-item-icon" src="assets/img/workshop-icon.svg">
                 </div>
-                <div class="service-item-title container-title">Think Better At Work Workshop</div>
+                <div class="service-item-title container-title">Think Better At Work</div>
                 <div class="service-item-subtitle text">Workshops that are informative, enjoyable and 
     provide practical tools:</div>
                 <div class="service-item-list-container">
@@ -113,7 +113,6 @@
     
     <div class="services-arrow-icon-container">
         <div class="container-title">...Want to think better at work?</div>
-        <div class="container-title">We offer corporate workshops too.</div>
         <img class="services-arrow-icon" src="assets/img/arrow.svg">
     </div>
     

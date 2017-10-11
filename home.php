@@ -19,7 +19,7 @@
     <div class="page">
         
         <div class="section">
-             <div class="content">
+             <div class="content top-content">
                 <?php include ( './components/section-title.php' ) ; ?>
                 <?php include ( './components/better-points.php' ) ; ?>
 

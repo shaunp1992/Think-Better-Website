@@ -47,6 +47,7 @@ body div {
 }
 .section-title-container .section-title-underline {
   width: 100px;
+  height: 22px;
 }
 .section-title-container .section-subtitle {
   padding-top: 10px;
@@ -330,7 +331,8 @@ body div {
   overflow-x: hidden;
 }
 .home-header-container {
-  height: 750px;
+  height: 100vh;
+  max-height: 700px;
 }
 .general-header-container {
   height: 600px;
@@ -361,7 +363,7 @@ body div {
   -moz-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   color: white;
-  opacity: 0.15;
+  opacity: 0.25;
 }
 .header-word-background .header-background-word:nth-child(1) {
   top: 35%;
@@ -442,8 +444,8 @@ body div {
   align-items: center;
 }
 .header-content .home-header-logo-container {
-  width: 350px;
-  height: 262px;
+  width: 320px;
+  height: 235px;
 }
 .header-content .home-header-top-logos-container {
   display: -webkit-box;
@@ -454,18 +456,16 @@ body div {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  width: 500px;
+  padding-top: 10px;
+  width: 600px;
 }
 .header-content .home-header-top-logos-container .feel-better-logo-container {
-  width: 125px;
-  height: 129px;
+  width: 120px;
+  height: 120px;
 }
 .header-content .home-header-top-logos-container .act-better-logo-container {
-  width: 115px;
-  height: 119px;
+  width: 110px;
+  height: 110px;
 }
 .header-subtitle {
   display: -webkit-box;
@@ -476,6 +476,7 @@ body div {
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
+  flex: 1 0 auto;
   font-family: 'Amatic SC', cursive;
   -webkit-font-smoothing: auto;
   -moz-font-smoothing: auto;
@@ -486,7 +487,7 @@ body div {
   margin-right: 50px;
 }
 .header-subtitle.home-header-subtitle {
-  font-size: 36px;
+  font-size: 28px;
 }
 .header-subtitle.general-header-subtitle {
   font-size: 30px;
@@ -511,6 +512,55 @@ body div {
   font-weight: 700;
   font-size: 104px;
   text-shadow: 5px 3px rgba(0, 0, 0, 0.15);
+}
+.header-video-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex: 1 0 auto;
+  margin: 20px 0;
+}
+.header-video-container .header-video-title {
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-size: 20px;
+  margin-top: 5px;
+  color: white;
+}
+.header-scroll-down-container {
+  position: absolute;
+  bottom: -45px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.header-scroll-down-container .header-scroll-down-text {
+  color: #652877;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 @media (max-width: 992px) {
   .general-header-title-container {
@@ -552,8 +602,11 @@ body div {
   .page-header-background {
     height: 800px;
   }
+  .header-subtitle {
+    flex: 0 0 auto;
+  }
   .header-subtitle.home-header-subtitle {
-    font-size: 24px;
+    font-size: 20px;
   }
   .header-subtitle.general-header-subtitle {
     font-size: 20px;
@@ -594,6 +647,9 @@ body div {
     top: 57.5%;
     right: 7.5%;
   }
+  .header-video-container {
+    flex: 0 0 auto;
+  }
 }
 @media (max-width: 480px) {
   .page-header-background {
@@ -615,7 +671,7 @@ body div {
     margin-right: 25px;
   }
   .home-header-container {
-    height: 425px;
+    height: 460px;
   }
   .general-header-container {
     height: 425px;
@@ -623,6 +679,7 @@ body div {
   .home-header-content .home-header-logo-container {
     width: 200px;
     height: 165.25px;
+    margin-top: 20px;
   }
   .header-word-background .header-background-word {
     font-size: 12px;
@@ -882,6 +939,29 @@ body div {
 }
 .button:hover {
   cursor: pointer;
+}
+.circle-button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+  margin: 15px 0 5px 0;
+  margin: 0;
+  flex: 1;
+}
+.circle-button .header-play-icon {
+  margin-left: 4px;
 }
 @media (max-width: 768px) {
   .button {
