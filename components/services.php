@@ -11,11 +11,11 @@
     provide practical tools:</div>
                 <div class="service-item-list-container">
                     <ul class="service-item-list list">
-                        <li div class="service-item-list-item list-item">How to survive when the going gets tough</li>
-                        <li div class="service-item-list-item list-item">How to stop “People Pleasing”</li>
-                        <li div class="service-item-list-item list-item">Managing negative “self-talk”</li>
-                        <li div class="service-item-list-item list-item">Recognising and managing unhealthy emotions</li>
-                        <li div class="service-item-list-item list-item">The Problem with Perfectionism</li>
+                        <li class="service-item-list-item list-item">How to survive when the going gets tough</li>
+                        <li class="service-item-list-item list-item">How to stop “People Pleasing”</li>
+                        <li class="service-item-list-item list-item">Managing negative “self-talk”</li>
+                        <li class="service-item-list-item list-item">Recognising and managing unhealthy emotions</li>
+                        <li class="service-item-list-item list-item">The Problem with Perfectionism</li>
                     </ul>
                 </div>
 

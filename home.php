@@ -33,6 +33,20 @@
 
             </div>
         </div>
+        
+        <div class="section purple-section">
+             <div class="content">
+                <?php include ( './components/section-title-white.php' ) ; ?>
+                 
+                 <div class="events-container owl-carousel owl-theme">
+                        <?php include ( './components/event-card.php' ) ; ?>
+                        <?php include ( './components/event-card.php' ) ; ?>
+                        <?php include ( './components/event-card.php' ) ; ?>
+                        <?php include ( './components/event-card.php' ) ; ?>
+                 </div>
+                
+            </div>
+        </div>
             
  
         

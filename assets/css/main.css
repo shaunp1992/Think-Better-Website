@@ -25,6 +25,9 @@ body div {
 .subtle-purple-section {
   background: linear-gradient(#FBF8FB, #FDFBFD);
 }
+.purple-section {
+  background: linear-gradient(#7E3195, #652877);
+}
 .section-title-container {
   display: -webkit-box;
   display: -moz-box;
@@ -879,6 +882,9 @@ body div {
   font-size: 42px;
   font-weight: 700;
 }
+.section-title-white {
+  color: white;
+}
 .section-subtitle {
   font-family: 'Open Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -931,12 +937,15 @@ body div {
 .text {
   font-size: 16px;
 }
+.text-bold {
+  font-weight: 700;
+}
 .button {
   padding: 5px 15px;
   border-radius: 3px;
   font-family: 'Amatic SC', cursive;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
 }
 .button.button-white {
   background: white;
@@ -1336,6 +1345,160 @@ button:focus {
   .service-item-icon-container .therapy-item-icon {
     width: 80px;
     min-height: 80px;
+  }
+}
+.event-container.owl-theme .owl-dots .owl-dot.active span {
+  background: #ffffff;
+}
+.event-card-container {
+  position: relative;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  border-radius: 5px;
+  color: #652877;
+  margin: 0 auto;
+  border: 5px solid #d0bed6;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.15);
+}
+.event-card-container .event-card-time-place-container-desktop {
+  width: 30%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-right: 4px solid #d0bed6;
+}
+.event-card-container .event-card-time-place-container-desktop .event-card-time {
+  font-size: 36px;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.event-card-container .event-card-details {
+  width: 70%;
+  padding: 25px;
+}
+.event-card-container .event-card-details .event-card-title {
+  width: calc(100% - 90px);
+}
+.event-card-subtitle {
+  margin: 5px 0 10px 0;
+}
+.event-card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-card-list .event-card-list-item {
+  flex: 0 0 50%;
+  margin: 5px 0px;
+  box-sizing: border-box;
+}
+.event-card-list .event-card-list-item:nth-child(odd) {
+  padding-right: 5px;
+}
+.event-card-list .event-card-list-item:nth-child(even) {
+  padding-left: 5px;
+}
+.event-price {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  text-align: right;
+}
+.event-price .price-text {
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-weight: 700;
+  font-size: 20px;
+}
+.event-price .discount-text {
+  font-size: 12px;
+}
+.event-card-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.event-card-time-place-container-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .event-card-container {
+    max-width: 400px;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .event-card-container .event-card-time-place-container-desktop {
+    border-right: none;
+    border-bottom: 5px solid #d0bed6;
+    width: 100%;
+    display: none;
+  }
+  .event-card-container .event-card-details {
+    width: 100%;
+  }
+  .event-card-container .event-card-details .event-card-title {
+    width: 100%;
+  }
+  .event-card-container .event-price {
+    text-align: left;
+    bottom: 10px;
+    left: 10px;
+    top: unset;
+    right: unset;
+  }
+  .event-card-container .event-card-list .event-card-list-item {
+    flex: 0 0 100%;
+  }
+  .event-card-container .event-card-list .event-card-list-item:nth-child(odd) {
+    padding-right: 0px;
+  }
+  .event-card-container .event-card-list .event-card-list-item:nth-child(even) {
+    padding-left: 0px;
+  }
+  .event-card-time-place-container-mobile {
+    display: block;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d0bed6;
   }
 }
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
