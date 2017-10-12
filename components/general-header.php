@@ -21,6 +21,19 @@
                 <span class="header-subtitle-line-two">and behavioural difficulties</span>
             </div>
         
+        <div class="general-header-video-container header-video-container">
+            <div class="home-header-button button button-white circle-button">
+                <div class="button-text button-text-purple">
+                    <img class="header-play-icon" src="assets/img/play-icon.svg">  
+                </div>
+            </div>
+         <div class="header-video-title">Watch Cognitive Behaviour Video</div>
+        </div>
+        <div class="header-scroll-down-container">
+            <div class="header-scroll-down-text">View More</div>
+            <img src="assets/img/down-arrow-icon.svg">
+        </div>
+        
         
     </div>
 </div>

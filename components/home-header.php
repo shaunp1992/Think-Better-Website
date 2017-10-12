@@ -31,7 +31,7 @@
             <div class="header-subtitle-line-two">The best version of you</div>
         </div>
         
-        <div class="header-video-container">
+        <div class="home-header-video-container header-video-container">
             <div class="home-header-button button button-white circle-button">
                 <div class="button-text button-text-purple">
                     <img class="header-play-icon" src="assets/img/play-icon.svg">  
