@@ -52,6 +52,9 @@ body div {
   width: 100px;
   height: 22px;
 }
+.section-title-container .section-title-underline img {
+  height: 17px;
+}
 .section-title-container .section-subtitle {
   padding-top: 10px;
 }
@@ -109,8 +112,15 @@ body div {
   .section-title-container {
     padding: 0 20px 40px;
   }
+  .section-title-container .section-title {
+    padding-bottom: 0px;
+  }
   .section-title-container .section-title-underline {
-    display: none;
+    width: 45px;
+    padding-bottom: 20px;
+  }
+  .section-title-container .section-title-underline img {
+    width: 50px;
   }
   .mini-paragraphs-container .mini-paragraph-container {
     margin-bottom: 30px;
@@ -1501,6 +1511,48 @@ button:focus {
     border-bottom: 2px solid #d0bed6;
   }
 }
+.blog-card-container {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  background: white;
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.15);
+  border: 5px solid #d0bed6;
+}
+.blog-card-container:last-child {
+  margin-bottom: 0px;
+}
+.blog-card-container .blog-card-snippet-container {
+  margin: 10px 0px 20px 0px;
+  color: #652877;
+}
+.blog-card-container .blog-card-button-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.blog-cards-view-all-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+@media (max-width: 768px) {
+  .blog-card-container:last-child {
+    display: none;
+  }
+}
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
 .amatic-font {
   font-family: 'Amatic SC', cursive;
@@ -1514,4 +1566,3 @@ button:focus {
   -moz-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*# sourceMappingURL=main.css.map */

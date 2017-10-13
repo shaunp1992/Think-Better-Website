@@ -48,6 +48,25 @@
             </div>
         </div>
             
+        
+        <div class="section subtle-purple-section">
+             <div class="content">
+                <?php include ( './components/section-title.php' ) ; ?>
+                 
+                <div class="blog-cards-container">
+                   <?php include ( './components/blog-card.php' ) ; ?>
+                   <?php include ( './components/blog-card.php' ) ; ?>
+                 </div> 
+                 
+                 <div class="blog-cards-view-all-container">
+                    <div class="button button-purple">
+                        <div class="button-text button-text-white">View All</div>
+                    </div>
+                 </div>
+              
+
+            </div>
+        </div>
  
         
     </div>
