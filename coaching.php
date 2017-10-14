@@ -1,14 +1,12 @@
-<?php ?>
+<?php include('perch/runtime.php'); ?>
 
 <!DOCTYPE html>
 <html lang="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/rough-css.css">
-    <?php include ( './common/common-header.php' ) ; ?>
+    <title>Cognitive Behaviour Coaching</title>
+    <?php include ( './common/common-head.php' ) ; ?>
 </head>
 
 <body>
@@ -74,5 +72,5 @@
 
 </body>
     
-<script src="./assets/js/main-min.js"></script>    
+<?php include ( './common/common-body.php' ) ; ?>    
 </html>
