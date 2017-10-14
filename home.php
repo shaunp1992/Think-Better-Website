@@ -31,6 +31,12 @@
         <div class="section purple-section">
              <div class="content">
                 <?php include ( './components/section-title-white.php' ) ; ?>
+                 <div class="section-title-container">
+                    <div class="section-title">Upcoming Events</div>
+                    <div class="section-title-underline">
+                        <img src="assets/img/title-underline.svg">
+                    </div>
+                 </div>
                  
                  <div class="events-container owl-carousel owl-theme">
                         <?php include ( './components/event-card.php' ) ; ?>
@@ -45,7 +51,12 @@
         
         <div class="section subtle-purple-section">
              <div class="content">
-                <?php include ( './components/section-title.php' ) ; ?>
+                <div class="section-title-container">
+                    <div class="section-title">Blog</div>
+                    <div class="section-title-underline">
+                        <img src="assets/img/title-underline.svg">
+                    </div>
+                 </div>
                  
                 <div class="blog-cards-container">
                    <?php include ( './components/blog-card.php' ) ; ?>
