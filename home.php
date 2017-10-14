@@ -24,9 +24,7 @@
         
         <div class="section subtle-purple-section">
              <div class="content">
-                <?php include ( './components/section-title.php' ) ; ?>
-                <?php include ( './components/services.php' ) ; ?>
-
+                <?php perch_content('Our Services'); ?>
             </div>
         </div>
         
