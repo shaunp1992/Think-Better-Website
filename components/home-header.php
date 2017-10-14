@@ -32,11 +32,9 @@
         </div>
         
         <div class="home-header-video-container header-video-container">
-            <div class="home-header-button button button-white circle-button">
-                <div class="button-text button-text-purple">
+            <a id="home-header-video" class="home-header-button button-white circle-button" href="https://www.facebook.com/facebook/videos/10153231379946729/" target="_top">
                     <img class="header-play-icon" src="assets/img/play-icon.svg">  
-                </div>
-            </div>
+            </a>
          <div class="header-video-title">Watch Intro Video</div>
         </div>
         <div class="header-scroll-down-container">

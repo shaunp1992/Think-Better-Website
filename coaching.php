@@ -41,6 +41,26 @@
             </div>
         </div>
         
+        <div class="section">
+            <div class="content">
+                <div class="subtle-section-title">How Does It Work?</div> 
+                 <div class="mini-paragraphs-container">
+                     <?php include ( './components/picture-paragraph.php' ) ; ?>
+                </div> 
+                <div class="double-list-container">
+                        <?php include ( './components/list.php' ) ; ?> 
+                        <?php include ( './components/list.php' ) ; ?> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="content">
+                <?php include ( './components/section-title.php' ) ; ?>
+                <?php include ( './components/contact.php' ) ; ?> 
+            </div>
+        </div>
+        
         <div class="section subtle-purple-section">
             <div class="content">
                 <?php include ( './components/section-title.php' ) ; ?>

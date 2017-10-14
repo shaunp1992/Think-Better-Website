@@ -48,6 +48,11 @@
     flex-basis: @basis;
 }
 
+.flex-position(@position){
+  -webkit-box-flex: @position;   /* OLD - iOS 6-, Safari 3.1-6 */      /* For old syntax, otherwise collapses. */
+  -webkit-flex: @position;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: @position;           /* IE 10 */
+}
 
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
 .ms-flex-justify(@msJustify) when (@msJustify = space-between)  {

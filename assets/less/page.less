@@ -79,7 +79,7 @@ body div{
     .flex-wrap(wrap);
     .mini-paragraph-container{
         margin-bottom: @paragraph-margin-bottom;
-        flex: 0 0 50%;
+        .flex-position(0 0 50%);
          &:nth-child(odd) {
             padding-right: 30px;
         }
@@ -147,7 +147,7 @@ body div{
     .mini-paragraphs-container{
          .mini-paragraph-container{
             margin-bottom: @paragraph-margin-bottom-tablet;
-            flex: 0 0 100%;
+            .flex-position(0 0 100%);
             &:nth-child(odd) {
                 padding-right: 0px;
             }

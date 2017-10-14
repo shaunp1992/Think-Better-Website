@@ -27,7 +27,7 @@
         
         .event-card-time {
             font-size: 36px;
-            flex: 1 0 auto;
+            .flex-position(1 0 auto);
             .flex();
             .flex-direction(column);
             .justify-content(center);
@@ -52,7 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     .event-card-list-item {
-        flex: 0 0 50%;
+        .flex-position(0 0 50%);
         margin: 5px 0px;
         box-sizing: border-box;
         &:nth-child(odd) {
@@ -131,7 +131,7 @@
         }
         
         .event-card-list .event-card-list-item {
-            flex: 0 0 100%;  
+            .flex-position(0 0 100%);
             &:nth-child(odd) {
                 padding-right: 0px;
             }

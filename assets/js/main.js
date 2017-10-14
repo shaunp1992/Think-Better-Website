@@ -79,6 +79,10 @@ $(document).ready(function(){
             }
         }
     })
+    
+      $('#home-header-video').magnificPopup({
+                type: 'iframe'
+        });
 
 });
 
