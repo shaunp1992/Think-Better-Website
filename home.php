@@ -12,7 +12,6 @@
 <body>
     
     <?php include ( './components/navbar.php' ) ; ?>
-    <?php include ( './components/home-header.php' ) ; ?>
     <?php perch_content('Header'); ?>
     
     <div class="page">
