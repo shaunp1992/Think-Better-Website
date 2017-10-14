@@ -32,7 +32,7 @@
         </div>
         
         <div class="home-header-video-container header-video-container">
-            <a id="home-header-video" class="home-header-button button-white circle-button" href="https://www.facebook.com/facebook/videos/10153231379946729/" target="_top">
+            <a id="home-header-video" class="home-header-button button-white circle-button" href="#header-video" class="open-popup-link">
                     <img class="header-play-icon" src="assets/img/play-icon.svg">  
             </a>
          <div class="header-video-title">Watch Intro Video</div>
@@ -42,4 +42,8 @@
             <img src="assets/img/down-arrow-icon.svg">
         </div>
     </div>
+</div>
+
+<div id="header-video" class="popup-container mfp-hide">
+    <div class="fb-video" data-href="https://www.facebook.com/bevthinkbetter/videos/1914841902088968/" data-width="800" data-allowfullscreen="true"></div>
 </div>

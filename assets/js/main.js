@@ -78,10 +78,11 @@ $(document).ready(function(){
                 items:1
             }
         }
-    })
+    });
     
       $('#home-header-video').magnificPopup({
-                type: 'iframe'
+            type: 'inline',
+          
         });
 
 });

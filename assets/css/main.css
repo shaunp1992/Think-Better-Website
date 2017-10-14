@@ -606,6 +606,19 @@ body div {
   -moz-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
+.popup-container {
+  position: relative;
+  padding: 40px;
+  width: auto;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.mfp-close-btn-in .mfp-close {
+  color: #fff !important;
+}
+.mfp-container {
+  background: rgba(0, 0, 0, 0.4);
+}
 @media (max-width: 992px) {
   .general-header-title-container {
     max-width: 600px;
@@ -772,6 +785,9 @@ body div {
   }
   .header-video-container .header-video-title {
     font-size: 16px;
+  }
+  .popup-container {
+    top: 150px;
   }
 }
 .footer-container {
@@ -1044,6 +1060,9 @@ body div {
 }
 .circle-button .header-play-icon {
   margin-left: 4px;
+}
+.circle-button:focus {
+  outline: none;
 }
 @media (max-width: 768px) {
   .button {
@@ -1743,7 +1762,35 @@ button:focus {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 1;
+  /* IE 10 */
   text-align: center;
+}
+.contact-container .contact-item .contact-item-icon-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 42px;
+  min-height: 79px;
+}
+.contact-container .contact-item .contact-item-icon-container .contact-item-icon {
+  width: 100%;
 }
 .contact-container .contact-item .contact-item-desc {
   font-family: 'Amatic SC', cursive;
@@ -1754,6 +1801,9 @@ button:focus {
   font-size: 24px;
   margin: 10px 0px 0px;
 }
+.contact-item.email-item .contact-item-icon-container .contact-item-icon {
+  width: 54px;
+}
 @media (max-width: 768px) {
   .contact-container {
     -ms-flex-direction: column;
@@ -1761,7 +1811,7 @@ button:focus {
     flex-direction: column;
   }
   .contact-container .contact-item {
-    margin: 35px 0;
+    margin: 25px 0;
   }
 }
 /* These are the conditional mixins for the different syntax for IE10 Flexbox*/
@@ -1777,4 +1827,3 @@ button:focus {
   -moz-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*# sourceMappingURL=main.css.map */
