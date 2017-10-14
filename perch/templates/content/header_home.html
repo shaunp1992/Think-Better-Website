@@ -27,15 +27,15 @@
         </div>
 
         <div class="home-header-subtitle header-subtitle">
-            <div class="header-subtitle-line-one"><perch:content type="text" id="tag-line-one" label="Tag Line (1)" help="First line of header tag line" /></div>
-            <div class="header-subtitle-line-two"><perch:content type="text" id="tag-line-two" label="Tag Line (2)" help="Second line of header tag line" /></div>
+            <div class="header-subtitle-line-one"><perch:content type="text" id="taglineone" label="Tag Line (1)" help="First line of header tag line" /></div>
+            <div class="header-subtitle-line-two"><perch:content type="text" id="taglinetwo" label="Tag Line (2)" help="Second line of header tag line" /></div>
         </div>
         
         <div class="home-header-video-container header-video-container">
             <a id="home-header-video" class="home-header-button button-white circle-button" href="#header-video" class="open-popup-link">
                     <img class="header-play-icon" src="assets/img/play-icon.svg">  
             </a>
-         <div class="header-video-title">Watch Intro Video</div>
+         <div class="header-video-title"><perch:content type="text" id="videotitle" label="Video Title" /></div>
         </div>
         <div class="header-scroll-down-container">
             <div class="header-scroll-down-text">View More</div>
@@ -45,5 +45,5 @@
 </div>
 
 <div id="header-video" class="popup-container mfp-hide">
-    <div class="fb-video" data-href="https://www.facebook.com/bevthinkbetter/videos/1914841902088968/" data-width="800" data-allowfullscreen="true"></div>
+    <div class="fb-video" data-href="<perch:content id="urlheadervideo" type="text" label="URL for Facebook video" help="On facebook, fight click on a video and select 'show video url', then paste it here "/>" data-width="800" data-allowfullscreen="true"></div>
 </div>
