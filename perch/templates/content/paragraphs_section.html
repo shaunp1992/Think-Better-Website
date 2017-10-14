@@ -1,0 +1,18 @@
+<div class="section-title-container">
+    <div class="section-title"><perch:content type="text" id="sectiontitle" label="Section Title" /></div>
+    <div class="section-title-underline">
+        <img src="assets/img/title-underline.svg">
+    </div>
+    <perch:if exists="sectionsubtitle">
+        <div class="section-subtitle"><perch:content type="textarea" size="xs" id="sectionsubtitle" label="Section Subtitle" /></div>
+    </perch:if>
+</div>
+
+<perch:blocks>
+  <perch:block type="text" label="Text">
+        <div class="paragraph-container">
+            <div class="paragraph-title"><perch:content type="text" id="paratitle" label="Paragraph Title" /></div>
+            <div class="paragraph"><perch:content type="textarea" size="m" id="sectionsubtitle" label="Paragraph" /></div>
+        </div>
+  </perch:block>
+</perch:blocks>

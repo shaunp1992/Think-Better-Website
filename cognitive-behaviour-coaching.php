@@ -12,15 +12,12 @@
 <body>
     
     <?php include ( './components/navbar.php' ) ; ?>
-     <?php perch_content('Header'); ?>
+    <?php perch_content('Header'); ?>
     
     <div class="page">
         <div class="section">
              <div class="content">
-                <?php include ( './components/section-title.php' ) ; ?>
-                <?php include ( './components/paragraph.php' ) ; ?>
-                <?php include ( './components/paragraph.php' ) ; ?>
-                <?php include ( './components/paragraph.php' ) ; ?> 
+                <?php perch_content('About Cognitive Behaviour Coaching'); ?>
             </div>
         </div>
             
