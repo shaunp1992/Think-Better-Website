@@ -8,7 +8,7 @@
             <div class="header-background-word">Refocus</div>
             <div class="header-background-word">Self Acceptance</div>
             <div class="header-background-word">Resilience</div>
-            <div class="header-background-word">Refresh</div>
+            <div class="header-background-word">communication</div>
             <div class="header-background-word">Best Self</div>
         </div>
         
