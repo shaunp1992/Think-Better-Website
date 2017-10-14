@@ -18,9 +18,7 @@
         
         <div class="section">
              <div class="content top-content">
-                <?php include ( './components/section-title.php' ) ; ?>
-                <?php include ( './components/better-points.php' ) ; ?>
-
+                <?php perch_content('What We Do'); ?>
             </div>
         </div>
         
