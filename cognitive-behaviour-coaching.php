@@ -23,14 +23,7 @@
             
         <div class="section">
             <div class="content">
-                <div class="subtle-section-title">How Does It Work?</div> 
-                 <div class="mini-paragraphs-container">
-                     <?php include ( './components/picture-paragraph.php' ) ; ?>
-                </div> 
-                <div class="double-list-container">
-                        <?php include ( './components/list.php' ) ; ?> 
-                        <?php include ( './components/list.php' ) ; ?> 
-                </div>
+                <?php perch_content('How Does It Work'); ?>
             </div>
         </div>
         
