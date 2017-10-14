@@ -17,7 +17,7 @@
                     <img class="workshop-item-icon" src="assets/img/workshop-icon.svg">
                 </div>
                 <div class="service-item-title container-title"><perch:content type="text" id="workshoptitle" label="Workshop Service Title" divider-before="Workshop Service"/></div>
-                <div class="service-item-subtitle text"><perch:content type="text" id="workshopsubtitle" label="Workshop Service Subtitle"/></div>
+                <div class="service-item-subtitle text"><perch:content type="textarea" size="xs" id="workshopsubtitle" label="Workshop Service Subtitle"/></div>
                 <div class="service-item-list-container">
                     <ul class="service-item-list list">
                         <perch:repeater id="workshoplist" label="Workshop Service List" help="Bullet pointed list to help users see what the service offers/includes. Recommended 6 max">
@@ -41,7 +41,7 @@
                     <img class="workshop-item-icon" src="assets/img/coaching-icon.svg">
                 </div>
                 <div class="service-item-title container-title"><perch:content type="text" id="cbctitle" label="Cognitive Behaviour Coaching Service Title" divider-before="Cognitive Behaviour Coaching Service"/></div>
-                <div class="service-item-subtitle text"><perch:content type="text" id="cbcsubtitle" label="Cognitive Behaviour Coaching Service Subtitle"/></div>
+                <div class="service-item-subtitle text"><perch:content type="textarea" size="xs" id="cbcsubtitle" label="Cognitive Behaviour Coaching Service Subtitle"/></div>
                 <div class="service-item-list-container">
                     <ul class="service-item-list list">
                         <perch:repeater id="cbclist" label="Cognitive Behaviour Coaching Service List" help="Bullet pointed list to help users see what the service offers/includes. Recommended 6 max">
@@ -65,7 +65,7 @@
                     <img class="workshop-item-icon" src="assets/img/therapy-icon.svg">
                 </div>
                 <div class="service-item-title container-title"><perch:content type="text" id="cbttitle" label="Cognitive Behaviour Therapy Service Title" divider-before="Cognitive Behaviour Therapy Service"/></div>
-                <div class="service-item-subtitle text"><perch:content type="text" id="cbtsubtitle" label="Cognitive Behaviour Therapy Service Subtitle"/></div>
+                <div class="service-item-subtitle text"><perch:content type="textarea" size="xs" id="cbtsubtitle" label="Cognitive Behaviour Therapy Service Subtitle"/></div>
                 <div class="service-item-list-container">
                     <ul class="service-item-list list">
                         <perch:repeater id="cbtlist" label="Cognitive Behaviour Therapy Service List" help="Bullet pointed list to help users see what the service offers/includes. Recommended 6 max">
@@ -83,24 +83,18 @@
             </div>
         </div>
 
-
-         
-
        <div class="service-item">
             <div class="service-item-inner">
                 <div class="service-item-icon-container">
                     <img class="workshop-item-icon" src="assets/img/workshop-icon.svg">
                 </div>
-                <div class="service-item-title container-title">Think Better At Work</div>
-                <div class="service-item-subtitle text">Workshops that are informative, enjoyable and 
-    provide practical tools:</div>
+                <div class="service-item-title container-title"><perch:content type="text" id="worktitle" label="Think Better At Work Service Title" divider-before="Think Better At Work Service"/></div>
+                <div class="service-item-subtitle text"><perch:content type="textarea" size="xs" id="worksubtitle" label="Think Better At Work Service Subtitle"/></div>
                 <div class="service-item-list-container">
                     <ul class="service-item-list list">
-                        <li div class="service-item-list-item list-item">How to survive when the going gets tough</li>
-                        <li div class="service-item-list-item list-item">How to stop “People Pleasing”</li>
-                        <li div class="service-item-list-item list-item">Managing negative “self-talk”</li>
-                        <li div class="service-item-list-item list-item">Recognising and managing unhealthy emotions</li>
-                        <li div class="service-item-list-item list-item">The Problem with Perfectionism</li>
+                        <perch:repeater id="worklist" label="Think Better At Work Service List" help="Bullet pointed list to help users see what the service offers/includes. Recommended 6 max">
+                            <li class="service-item-list-item list-item"><perch:content id="worklistitem" type="text" label="Bullet Point"/></li>
+                        </perch:repeater> 
                     </ul>
                 </div>
 
