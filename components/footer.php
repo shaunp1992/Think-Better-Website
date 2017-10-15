@@ -18,10 +18,12 @@
                     <img class="footer-social-icon" src="assets/img/linkedin-icon.svg">
                 </div>
                 
+<!--
                 <div class="footer-social-item">
                     <img class="footer-social-item-background" src="assets/img/social-background.svg">
                      <img class="footer-social-icon" src="assets/img/youtube-icon.svg">
                 </div>
+-->
             </div>
         </div>
         <div class="footer-copyright-section footer-section">

@@ -1090,6 +1090,8 @@ body div {
 }
 .button.button-purple {
   background: #652877;
+  color: white;
+  border: none;
 }
 .button .button-text-purple {
   color: #652877;
@@ -1280,6 +1282,14 @@ body div {
 }
 .form-container .form-button-container {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .form-leaning-icon-container {
   position: absolute;
