@@ -294,6 +294,19 @@ body div {
     display: block;
     height: 18px;
   }
+  .mobile-menu .nav-item-dropdown-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .mobile-menu .nav-item-dropdown-container .nav-item-dropdown-item {
+    text-decoration: none;
+  }
   .mobile-menu-button .bar {
     position: relative;
     background: white;
@@ -1297,6 +1310,21 @@ body div {
   width: 200px;
   right: -200px;
   bottom: 0;
+}
+.form-response-container.container-title {
+  min-height: 380px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
 }
 @media (max-width: 1280px) {
   .form-container {
