@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Think Better Workshop</title>
+    <title>Think Better Workshops</title>
     <?php include ( './common/common-head.php' ) ; ?>
 </head>
 
