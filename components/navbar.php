@@ -39,9 +39,9 @@
                         <a href="cognitive-behaviour-therapy.php" class="nav-item-dropdown-item">Cognitive Behaviour Therapy</a>
                     </div>
                 </div>
-                <div href="about-think-better.php" class="nav-item">About</div>
-                <div class="nav-item">Blog</div>
-                <div href="contact.php" class="nav-item">Contact</div>
+                <a href="about-think-better.php" class="nav-item">About</a>
+                <a class="nav-item">Blog</div>
+                <a href="contact.php" class="nav-item">Contact</a>
             </div>
 
         </div>

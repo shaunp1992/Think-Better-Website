@@ -353,6 +353,7 @@ body div {
     font-size: 28px;
     padding: 10px;
     font-weight: 600;
+    color: white;
   }
   .mobile-menu-container .nav-item-dropdown-item {
     border-top: 1px solid white;

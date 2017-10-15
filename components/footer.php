@@ -3,7 +3,7 @@
         <div class="footer-contact-section footer-section">
             <div class="footer-section-title">Contact Us:</div>
 <!--            <div class="footer-section-item">Phone: 087 9678149</div>-->
-            <a href="tel:<perch:content type="text" id="phonenumber" label="Phone Number" />" class="footer-section-item"><perch:content type="text" id="phonenumber" label="Phone Number" /></a>
+            <a class="footer-section-item" href="tel:<perch:content type="text" id="phonenumber" label="Phone Number"/>"><perch:content type="text" id="phonenumber" label="Phone Number" /></a>
             
             <div class="footer-section-item">Email: info@thinkbetter.ie</div>
             
