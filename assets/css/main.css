@@ -15,6 +15,9 @@ body div {
   margin-left: auto;
   margin-right: auto;
 }
+.section:last-child {
+  padding-bottom: 50px;
+}
 .content {
   padding: 50px 90px;
   max-width: 1440px;
@@ -1822,8 +1825,14 @@ button:focus {
   font-size: 24px;
   margin: 10px 0px 0px;
 }
+.contact-container .contact-item a {
+  text-decoration: none;
+}
 .contact-item.email-item .contact-item-icon-container .contact-item-icon {
   width: 54px;
+}
+.contact-item.location-item .contact-item-icon-container .contact-item-icon {
+  width: 50px;
 }
 @media (max-width: 768px) {
   .contact-container {
