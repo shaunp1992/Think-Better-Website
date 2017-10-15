@@ -95,30 +95,9 @@
         <div class="section subtle-purple-section">
             <div class="content">
                 
-                <perch:form id="add_to_cart" app="perch_shop" action="/checkout">
-                    <perch:input id="product" type="hidden" env-autofill="false"
-                        value="<perch:shop id="productID" type="hidden" />" />
-                    <perch:input type="submit" value="Buy now" />
-                </perch:form>
+                <?php perch_content('Testing Add To Cart')?>
                 
-                <perch:form id="add_to_cart" app="perch_shop" action="/checkout">
-                  <perch:productopts>
-                    <perch:productvalues>
-                      <perch:before><ul></perch:before>
-                      <li>
-                          <label>
-                              <perch:input id="options" name="opt-<perch:productvalue id="optionID" />[]"
-                                value="<perch:productvalue id="valueID" />" type="radio" required="required" />
-                              <perch:productvalue id="valueTitle" />
-                          </label>
-                      </li>
-                      <perch:after></ul></perch:after>
-                    </perch:productvalues>
-                  </perch:productopts>
-                  <perch:input id="product" type="hidden" env-autofill="false"
-                    value="<perch:shop id="productID" type="hidden" env-autofill="false" />" />
-                  <perch:input type="submit" value="Buy now" />
-                </perch:form>
+                
                 
                 
                 <?php perch_shop_products(); ?>
