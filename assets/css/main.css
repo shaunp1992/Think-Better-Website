@@ -240,6 +240,14 @@ body div {
   transition: all 0.25s;
   border: 1px solid #652877;
   overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 .nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-container .nav-item-dropdown-item {
   padding: 10px 10px;
@@ -249,6 +257,7 @@ body div {
   font-weight: 500;
   color: white;
   letter-spacing: 0.5px;
+  text-decoration: none;
 }
 .nav-bar-items-container .nav-item-dropdown .nav-item-dropdown-container .nav-item-dropdown-item:first-child {
   border-top: none;
