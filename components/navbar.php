@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <a href="about-think-better.php" class="nav-item">About</a>
-                <a class="nav-item">Blog</div>
+                <a class="nav-item">Blog</a>
                 <a href="contact.php" class="nav-item">Contact</a>
             </div>
 

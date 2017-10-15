@@ -24,7 +24,6 @@
         <div class="section subtle-purple-section">
             <div class="content">
                 <?php perch_content('Contact Form'); ?>
-                <?php include ( './components/contact-form.php' ) ; ?>
             </div>
         </div>
         
