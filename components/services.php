@@ -18,11 +18,11 @@
                         <li class="service-item-list-item list-item">The Problem with Perfectionism</li>
                     </ul>
                 </div>
-
+                
                 <div class="service-item-button-container">
-                    <div class="button button-purple">
+                    <a href="think-better-workshops.php" class="button button-purple">
                         <div class="button-text button-text-white">Learn More</div>
-                    </div>
+                    </a>
                 </div>
 
             </div>
@@ -47,9 +47,9 @@
                 </div>
 
                 <div class="service-item-button-container">
-                    <div class="button button-purple">
+                    <a href="cognitive-behaviour-coaching.php" class="button button-purple">
                         <div class="button-text button-text-white">Learn More</div>
-                    </div>
+                    </a>
                 </div>
 
             </div>
@@ -75,9 +75,9 @@
                 </div>
 
                 <div class="service-item-button-container">
-                    <div class="button button-purple">
+                    <a href="cognitive-behaviour-therapy.php" class="button button-purple">
                         <div class="button-text button-text-white">Learn More</div>
-                    </div>
+                    </a>
                 </div>
 
             </div>
@@ -102,9 +102,9 @@
                 </div>
 
                 <div class="service-item-button-container">
-                    <div class="button button-purple">
+                    <a href="think-better-at-work.php" class="button button-purple">
                         <div class="button-text button-text-white">Learn More</div>
-                    </div>
+                    </a>
                 </div>
 
             </div>

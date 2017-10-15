@@ -14,9 +14,9 @@
                     <div class="nav-item-dropdown-text">Services</div>
                     <div class="nav-item-dropdown-container">
                         <a href="think-better-workshops.php" class="nav-item-dropdown-item">Think Better Workshops</a>
-                        <a href="cognitive-behaviour-coaching.php" class="nav-item-dropdown-item">Think Better Workshops at Work</a>
-                        <a href="cognitive-behaviour-therapy.php" class="nav-item-dropdown-item">Cognitive Beahaviour Coaching</a>
-                        <a href="think-better-at-work.php" class="nav-item-dropdown-item">Cognitive Behaviour Therapy</a>
+                        <a href="think-better-at-work.php" class="nav-item-dropdown-item">Think Better Workshops at Work</a>
+                        <a href="cognitive-behaviour-coaching.php" class="nav-item-dropdown-item">Cognitive Beahaviour Coaching</a>
+                        <a href="cognitive-behaviour-therapy.php" class="nav-item-dropdown-item">Cognitive Behaviour Therapy</a>
                     </div>
                 </div>
                 <a href="about-think-better.php" class="nav-item">About</a>
@@ -34,9 +34,9 @@
                 <div class="nav-item-dropdown">
                     <div class="nav-item-dropdown-container">
                         <a href="think-better-workshops.php" class="nav-item-dropdown-item">Think Better Workshops</a>
-                        <a href="cognitive-behaviour-coaching.php" class="nav-item-dropdown-item">Think Better Workshops at Work</a>
-                        <a href="cognitive-behaviour-therapy.php" class="nav-item-dropdown-item">Cognitive Beahaviour Coaching</a>
-                        <a href="think-better-at-work.php" class="nav-item-dropdown-item">Cognitive Behaviour Therapy</a>
+                        <a href="think-better-at-work.php" class="nav-item-dropdown-item">Think Better Workshops at Work</a>
+                        <a href="cognitive-behaviour-coaching.php" class="nav-item-dropdown-item">Cognitive Beahaviour Coaching</a>
+                        <a href="cognitive-behaviour-therapy.php" class="nav-item-dropdown-item">Cognitive Behaviour Therapy</a>
                     </div>
                 </div>
                 <div href="about-think-better.php" class="nav-item">About</div>
