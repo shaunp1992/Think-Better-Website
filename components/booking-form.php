@@ -35,5 +35,3 @@
     
     
 </div>
-
-<?php perch_shop_products(); ?>

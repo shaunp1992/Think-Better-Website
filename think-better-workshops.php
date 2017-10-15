@@ -52,6 +52,14 @@
             </div>
         </div>
         
+        <div class="section subtle-purple-section">
+            <div class="content">
+                <?php perch_shop_products(); ?>
+            </div>
+        </div>
+        
+        
+        
     </div>
     
     <?php include ( './components/footer.php' ) ; ?>
