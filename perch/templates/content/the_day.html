@@ -16,13 +16,21 @@
                 <perch:content type="text" id="smallparatitle" label="The Day Activity Title" />
                 <div class="category-icons-container">
                     
-                    <perch:content id="thinkbettericon" type="checkbox" label="Think Better" value="<img src="assets/img/think-better-icon.svg">" />
+                    <perch:content id="thinkbettericon" type="checkbox" label="Think Better" value=""/>
+                    <perch:if exists="feelbettericon">
+                        <img src="assets/img/think-better-icon.svg">
+                    </perch:if>
                     
                     <perch:content id="feelbettericon" type="checkbox" label="Feel Better" value=""/>
                     <perch:if exists="feelbettericon">
                         <img src="assets/img/feel-better-icon.svg">
                     </perch:if>
-                    <img src="assets/img/act-better-icon.svg">
+
+                    <perch:content id="actbettericon" type="checkbox" label="Think Better" value=""/>
+                    <perch:if exists="actbettericon">
+                        <img src="assets/img/think-better-icon.svg">
+                    </perch:if>
+                    
                 </div>
             </div>
             <div class="mini-paragraph"><perch:content type="textarea" size="s" id="smallparagraph" label="Activity Description" /></div>
