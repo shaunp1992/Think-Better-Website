@@ -344,6 +344,14 @@ body div {
     color: white;
     overflow: hidden;
     transition: all 0.25s;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
   .mobile-menu-container.open {
     height: 100vh;
@@ -354,6 +362,7 @@ body div {
     padding: 10px;
     font-weight: 600;
     color: white;
+    text-decoration: none;
   }
   .mobile-menu-container .nav-item-dropdown-item {
     border-top: 1px solid white;
@@ -1326,6 +1335,9 @@ body div {
   -webkit-align-items: center;
   align-items: center;
   text-align: center;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
 }
 @media (max-width: 1280px) {
   .form-container {
