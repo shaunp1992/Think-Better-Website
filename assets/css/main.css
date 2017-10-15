@@ -211,6 +211,7 @@ body div {
   font-weight: 700;
   padding: 28px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .nav-bar-items-container .nav-item:hover {
   color: #e6bdf2;

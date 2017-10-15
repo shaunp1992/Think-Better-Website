@@ -2,7 +2,10 @@
         <div class="nav-bar nav-footer-content">
             
             <div class="nav-bar-logo-container">
-                <img src="assets/img/logo-white.svg">
+                <a href="home.php">
+                    <img src="assets/img/logo-white.svg">
+                </a>
+                
             </div>
 
             <div class="nav-bar-items-container desktop-menu">
