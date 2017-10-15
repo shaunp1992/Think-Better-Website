@@ -10,17 +10,22 @@
 
 <div class="mini-paragraphs-container">
     <perch:blocks>
-      <perch:block type="text" label="New Small Paragraph">
+      <perch:block type="text" label="New Activity">
         <div class="mini-paragraph-container">
             <div class="mini-paragraph-title mini-paragraph-title-category-icons">
-                <perch:content type="text" id="smallparatitle" label="Small Paragraph Title" />
+                <perch:content type="text" id="smallparatitle" label="The Day Activity Title" />
                 <div class="category-icons-container">
-                    <img src="assets/img/think-better-icon.svg">
-                    <img src="assets/img/feel-better-icon.svg">
+                    
+                    <perch:content id="thinkbettericon" type="checkbox" label="Think Better" value="<img src="assets/img/think-better-icon.svg">" />
+                    
+                    <perch:content id="feelbettericon" type="checkbox" label="Feel Better" value=""/>
+                    <perch:if exists="feelbettericon">
+                        <img src="assets/img/feel-better-icon.svg">
+                    </perch:if>
                     <img src="assets/img/act-better-icon.svg">
                 </div>
             </div>
-            <div class="mini-paragraph"><perch:content type="textarea" size="s" id="smallparagraph" label="Small Paragraph" /></div>
+            <div class="mini-paragraph"><perch:content type="textarea" size="s" id="smallparagraph" label="Activity Description" /></div>
         </div>
       </perch:block>
     </perch:blocks>

@@ -1011,6 +1011,25 @@ body div {
 .text-bold {
   font-weight: 700;
 }
+.mini-paragraph-title-category-icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.category-icons-container {
+  height: 20px;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.category-icons-container img {
+  width: 25px;
+}
 .button {
   padding: 5px 15px;
   border-radius: 3px;
