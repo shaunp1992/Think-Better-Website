@@ -1043,6 +1043,18 @@ body div {
   -webkit-align-items: center;
   align-items: center;
 }
+.the-day-legend-container .the-day-legend-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 40px;
+}
 .the-day-legend-container .the-day-legend-item.think-better-legend-item .the-day-legend-text {
   color: #652877;
 }
@@ -1054,6 +1066,7 @@ body div {
 }
 .the-day-legend-container .the-day-legend-item .the-day-legend-icon {
   width: 25px;
+  height: 25px;
 }
 .button {
   padding: 5px 15px;
