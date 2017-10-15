@@ -27,7 +27,7 @@
             </div>
         </div>
         
-        <div class="section subtle-purple-section">
+        <div id="contact-form" class="section subtle-purple-section">
             <div class="content">
                 <?php perch_content('Contact Form'); ?>
                 <?php perch_content('Contact Form Test'); ?>
