@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Think Better At Work</title>
+    <title>About Us</title>
     <?php include ( './common/common-head.php' ) ; ?>
 </head>
 
@@ -17,20 +17,13 @@
     <div class="page">
         <div class="section">
              <div class="content">
-                <?php perch_content('About Think Better At Work'); ?>
+                <?php perch_content('About Think Better'); ?>
             </div>
         </div>
             
         <div class="section">
             <div class="content">
-                <?php perch_content('How Does It Work/ What It Includes'); ?>
-            </div>
-        </div>
-        
-        <div class="section subtle-purple-section">
-            <div class="content">
-                <?php perch_content('Contact Form'); ?>
-                <?php include ( './components/contact-form.php' ) ; ?>
+                <?php perch_content('About Bev'); ?>
             </div>
         </div>
         

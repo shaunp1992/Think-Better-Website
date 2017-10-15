@@ -1,0 +1,36 @@
+<div class="paragraph-container">
+    <div class="paragraph-title"><perch:content type="text" id="sectiontitle" label="About Bev Title" /></div>
+    <div class="paragraph"><perch:content type="textarea" size="m" id="paragraphone" label="Paragraph One" /></div>
+    
+<br><br>    
+<div class="picture-paragraph-container">
+    <div class="paragraph"><perch:content type="textarea" size="m" id="paragraphtwo" label="Paragraph Two" help="Paragraph beside the picture of Bev" /></div>
+    
+    <div class="picture-container">
+        <img src="<perch:content id="bevpic" type="image" label="Picture of Bev" />">
+    </div>
+</div>    
+
+</div>
+
+<div class="double-list-container">
+    <div class="list-container">
+        <div class="paragraph-title"><perch:content type="text" id="qualificationlisttitle" label="Qualification List Title" /></div>
+        <ul class="list">
+            <perch:repeater id="qualificationlist" label="Qualifications">
+                 <li class="paragraph"><perch:content id="qualificationlistitem" type="text" label="Qualification"/></li>
+            </perch:repeater> 
+        </ul>
+    </div>
+    <div class="list-container">
+        <div class="paragraph-title"><perch:content type="text" id="experiencelisttitle" label="Experience List Title" /></div>
+        <ul class="list">
+            <perch:repeater id="experiencelist" label="Experience">
+                 <li class="paragraph"><perch:content id="experiencelistitem" type="text" label="Experience"/></li>
+            </perch:repeater> 
+        </ul>
+    </div>
+</div>
+
+
+
