@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cognitive Behaviour Coaching</title>
+    <title>Cognitive Behaviour Therapy</title>
     <?php include ( './common/common-head.php' ) ; ?>
 </head>
 
@@ -17,7 +17,7 @@
     <div class="page">
         <div class="section">
              <div class="content">
-                <?php perch_content('About Cognitive Behaviour Coaching'); ?>
+                <?php perch_content('About Cognitive Behaviour Therapy'); ?>
             </div>
         </div>
             
