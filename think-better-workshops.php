@@ -21,7 +21,7 @@
             </div>
         </div>
             
-        <div class="section">
+        <div class="section subtle-purple-section">
             <div class="content">
                 <?php perch_content('The Day'); ?>
             </div>
