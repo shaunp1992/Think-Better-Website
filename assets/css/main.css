@@ -1339,7 +1339,7 @@ body div {
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
-  color: #652877;
+  -webkit-text-fill-color: #652877 !important;
 }
 @media (max-width: 1280px) {
   .form-container {
