@@ -306,6 +306,7 @@ body div {
   }
   .mobile-menu .nav-item-dropdown-container .nav-item-dropdown-item {
     text-decoration: none;
+    color: white;
   }
   .mobile-menu-button .bar {
     position: relative;
@@ -1338,6 +1339,7 @@ body div {
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
+  color: #652877;
 }
 @media (max-width: 1280px) {
   .form-container {
