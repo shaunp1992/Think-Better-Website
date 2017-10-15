@@ -1,0 +1,27 @@
+<div class="section-title-container">
+    <div class="section-title"><perch:content type="text" id="sectiontitle" label="Section Title" /></div>
+    <div class="section-title-underline">
+        <img src="assets/img/title-underline.svg">
+    </div>
+    <perch:if exists="sectionsubtitle">
+        <div class="section-subtitle"><perch:content type="textarea" size="xs" id="sectionsubtitle" label="Section Subtitle" /></div>
+    </perch:if>
+</div>
+
+<div class="mini-paragraphs-container">
+    <perch:blocks>
+      <perch:block type="text" label="New Small Paragraph">
+        <div class="mini-paragraph-container">
+            <div class="mini-paragraph-title mini-paragraph-title-category-icons">
+                <perch:content type="text" id="smallparatitle" label="Small Paragraph Title" />
+                <div class="category-icons-container">
+                    <img src="assets/img/think-better-icon.svg">
+                    <img src="assets/img/feel-better-icon.svg">
+                    <img src="assets/img/act-better-icon.svg">
+                </div>
+            </div>
+            <div class="mini-paragraph"><perch:content type="textarea" size="s" id="smallparagraph" label="Small Paragraph" /></div>
+        </div>
+      </perch:block>
+    </perch:blocks>
+</div>
