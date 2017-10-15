@@ -1030,6 +1030,31 @@ body div {
 .category-icons-container img {
   width: 25px;
 }
+.the-day-legend-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.the-day-legend-container .the-day-legend-item.think-better-legend-item .the-day-legend-text {
+  color: #652877;
+}
+.the-day-legend-container .the-day-legend-item.feel-better-legend-item .the-day-legend-text {
+  color: #59B947;
+}
+.the-day-legend-container .the-day-legend-item.act-better-legend-item .the-day-legend-text {
+  color: #EF7B21;
+}
+.the-day-legend-container .the-day-legend-item .the-day-legend-icon {
+  width: 25px;
+}
 .button {
   padding: 5px 15px;
   border-radius: 3px;
