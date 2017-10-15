@@ -16,12 +16,17 @@
     .flex();
     .justify-content(space-between);
     .list-container{
+        .flex-position(1 0 50%);
         &:first-child{
             margin-right: 20px;
         }
 
         &:last-child{
             margin-left: 20px;
+        }
+        
+        li{
+            margin-bottom: 20px;
         }
     }   
 }
@@ -46,6 +51,7 @@
          .flex-direction(column);
         .justify-content(space-between);
         .list-container{
+            .flex-position(1 0 100%);
             &:first-child{
                 margin-right: 0px;
                 margin-bottom: 30px;
