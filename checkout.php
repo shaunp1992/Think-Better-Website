@@ -1,9 +1,3 @@
-<?php
-  perch_shop_registration_form([
-    'template' => 'checkout/customer_create_passwordless.html'
-  ]);
-?>
-
 <?php include('perch/runtime.php'); ?>
 
 <!DOCTYPE html>
