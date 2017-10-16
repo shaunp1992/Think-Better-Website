@@ -17,21 +17,18 @@
     <div class="page">
         <div class="section">
              <div class="content top-content">
-                 
                  <?php
-                    $return_url = 'http://thinkbetter.ie/payment.php';
-                    $cancel_url = 'http://mysite.com/home.php';
+                      perch_shop_complete_payment('paypal-express');
 
-                      perch_shop_checkout('paypal-express', [
-                        'return_url' => $return_url,
-                        'cancel_url' => $cancel_url,
-                      ]);
-                 
-                 ?>
+                      if (perch_shop_order_successful()) {
+                          echo '<h1>Thank you for your order!</h1>';
+                        }else{
+                          echo '<h1>Sorry!</h1>';
+                        }
+                    ?>
             </div>
         </div>
             
-        
     </div>
     
     <?php include ( './components/footer.php' ) ; ?>
