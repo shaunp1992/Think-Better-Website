@@ -116,7 +116,7 @@
 	</perch:form>
 
 	<p>
-		<a href="checkout">Checkout now</a>
+		<a href="checkout.php">Checkout now</a>
 	</p>
 
 <perch:else />
