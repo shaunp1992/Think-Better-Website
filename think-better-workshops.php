@@ -86,6 +86,23 @@
 
 
             </div>
+                
+                
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="HJ82P6ZLC74MJ">
+                <table>
+                <tr><td><input type="hidden" name="on0" value="Quantity">Quantity</td></tr><tr><td><select name="os0">
+                    <option value="1 Person">1 Person €90.00 EUR</option>
+                    <option value="2 People">2 People €180.00 EUR</option>
+                    <option value="4 People">4 People €324.00 EUR</option>
+                </select> </td></tr>
+                </table>
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+    
 
 
             <?php perch_shop_products(); ?>

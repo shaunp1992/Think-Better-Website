@@ -23,7 +23,7 @@
                       if (perch_shop_order_successful()) {
                           echo '<h1>Thank you for your order!</h1>';
                         }else{
-                          echo '<h1>Sorry!</h1>';
+                          echo '<h1>Payment Recieved!</h1>';
                         }
                     ?>
             </div>
