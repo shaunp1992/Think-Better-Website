@@ -1196,6 +1196,53 @@ body div {
   right: -200px;
   bottom: 0;
 }
+.form-select-list {
+  height: 36px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #652877;
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-size: 24px;
+  font-weight: 700;
+  color: #652877;
+  margin-left: -4px;
+  cursor: pointer;
+}
+.form-total {
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-size: 32px;
+  font-weight: 700;
+  color: #652877;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.form-total .total-amount {
+  min-width: 22px;
+}
+.form-container .select-list-input-container {
+  overflow: hidden;
+}
+.form-container .select-list-input-container .form-select-list {
+  width: calc(100% + 8px);
+}
+.pay-button-container {
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 1280px) {
   .form-container {
     max-width: 500px;
@@ -1827,3 +1874,4 @@ button:focus {
   -moz-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*# sourceMappingURL=main.css.map */

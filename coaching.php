@@ -68,6 +68,13 @@
             </div>
         </div>
         
+        <div class="section subtle-purple-section">
+            <div class="content">
+                <?php include ( './components/section-title.php' ) ; ?>
+                <?php include ( './components/booking-form.php' ) ; ?>
+            </div>
+        </div>
+        
     </div>
     
     <?php include ( './components/footer.php' ) ; ?>
