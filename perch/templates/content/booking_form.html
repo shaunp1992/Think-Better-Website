@@ -12,17 +12,27 @@
 
         <div class="form-fields-container">
 
-            <div class="form-input-container">
-                <input type="text" class="form-input" placeholder="Full Name">
-            </div>
+            <perch:form id="booking" method="post" app="perch_forms">
+               <div class="form-input-container">
+                    <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
+                    <perch:error for="name" type="required">Please add your fullname</perch:error>
+                </div>
 
-            <div class="form-input-container">
-                <input type="text" class="form-input" placeholder="Email">
-            </div>
+                <div class="form-input-container">
+                    <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
+                    <perch:error for="email" type="required">Please add your email address</perch:error>
+                    <perch:error for="email" type="format">Please check your email address</perch:error>
+                </div>
 
-            <div class="form-input-container">
-                <input type="text" class="form-input" placeholder="Phone">
-            </div>
+                <div class="form-input-container">
+                    <input type="text" class="form-input" placeholder="Phone">
+                </div>
+                
+                <div class="form-button-container">
+                    <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
+                </div>
+            </perch:form> 
+                
 
             <div class="form-input-container select-list-input-container">
                 <select id="workshop-selection" class="form-select-list">
