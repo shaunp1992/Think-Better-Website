@@ -10,7 +10,7 @@
     <div class="form">
         <div class="form-title">Booking Form</div>
         
-        <perch:form id="booking" method="post" app="perch_forms">
+        <perch:form id="booking" method="post" app="perch_forms" action="https://www.paypal.com/cgi-bin/webscr">
         <div class="form-fields-container">
 
             
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="form-input-container">
-                    <input type="text" class="form-input" placeholder="Phone">
+                    <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Phone" />
                 </div>
                 
                
@@ -104,7 +104,7 @@
 
 
          <div class="form-button-container">
-                            <perch:input type="submit" id="submit" class="button button-purple" value="PERCH SEND" />
+                            <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
                         </div>
         </div><!--FORM END -->
         </perch:form> 
