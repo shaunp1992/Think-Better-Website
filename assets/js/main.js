@@ -85,6 +85,10 @@ $(document).ready(function(){
           
         });
     
+    $("#pay-submit").click(function() {
+        $("#booking").submit();
+    });
+    
     $('#pay-button-full').show(); 
     $('#pay-button-half').hide();
     $('#pay-button-pod').hide(); 
