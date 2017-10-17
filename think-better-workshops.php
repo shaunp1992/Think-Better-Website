@@ -48,79 +48,113 @@
         
         <div class="section subtle-purple-section">
             <div class="content">
-                <?php perch_content('Booking Form'); ?>
-                <div class="form-container">
-                <div class="form">
-                    <div class="form-title">Booking Form</div>
+                    <div class="form-container">
+                        <div class="form">
+                            <div class="form-title">Booking Form</div>
 
-                    <div class="form-fields-container">
+                            <div class="form-fields-container">
 
-                        <div class="form-input-container">
-                            <input type="text" class="form-input" placeholder="Full Name">
+                                <div class="form-input-container">
+                                    <input type="text" class="form-input" placeholder="Full Name">
+                                </div>
+
+                                <div class="form-input-container">
+                                    <input type="text" class="form-input" placeholder="Email">
+                                </div>
+
+                                <div class="form-input-container">
+                                    <input type="text" class="form-input" placeholder="Phone">
+                                </div>
+
+                                <div class="form-input-container select-list-input-container">
+                                    <select id="workshop-selection" class="form-select-list">
+                                      <option selected="selected" disabled>Pick a workshop</option>
+                                      <option value="full">Workshop Full Day - 17th October 2018</option>
+                                      <option value="half">Workshop Half Day - 18th October 2018</option>
+                                      <option value="full">Workshop Full Day - 20th October 2018</option>
+                                      <option value="pod">Workshop 1 hour - 21st October 2018</option>
+                                    </select>
+                                </div>
+
+                                <div id="pay-button-full">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="HJ82P6ZLC74MJ">
+                                        <input type="hidden" name="on0" value="Quantity">
+                                        <div class="form-input-container select-list-input-container">
+                                            <select name="os0" class="form-select-list quantity-select">
+                                                <option selected="selected" disabled>Number of people</option>
+                                                <option value="90">1 Person</option>
+                                                <option value="180">2 People</option>
+                                                <option value="270">3 People</option>
+                                                <option value="324">4 People (10% Off)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-total">
+                                            <div class="total-text">Total: €</div>
+                                            <div class="total-amount"></div>
+                                        </div>
+
+                                        <div class="pay-button-container">
+                                            <input type="hidden" name="currency_code" value="EUR">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                        </div>
+
+                                    </form>
+
+                                </div>
+
+
+                                <div id="pay-button-half">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="PMT2SFAW8WYYS">
+                                        <input type="hidden" name="on0" value="Quantity">
+                                        <div class="form-input-container select-list-input-container">
+                                            <select name="os0" class="form-select-list quantity-select">
+                                                <option selected="selected" disabled>Number of people</option>
+                                                <option value="45">1 Person</option>
+                                                <option value="90">2 People</option>
+                                                <option value="135">3 People</option>
+                                                <option value="162">4 People (10% Off)</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-total">
+                                            <div class="total-text">Total: €</div>
+                                            <div class="total-amount">0</div>
+                                        </div>
+                                        <input type="hidden" name="currency_code" value="EUR">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
+                                </div>
+
+                                <div id="pay-button-pod">
+                                    <div>Pay on day Eur 30</div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="form-button-container">
+                                <div class="button button-purple">
+                                    <div class="button-text button-text-white">Send</div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-input-container">
-                            <input type="text" class="form-input" placeholder="Email">
-                        </div>
-
-                        <div class="form-input-container">
-                            <input type="text" class="form-input" placeholder="Phone">
-                        </div>
-
-                        <div class="form-input-container">
-                            <textarea rows="4" cols="50" class="form-input" placeholder="Message"></textarea>
-                        </div>
-
+                        <div class="form-leaning-icon-container"> 
+                            <img src="assets/img/leaning-icon.svg">
+                        </div>    
                     </div>
 
-                    <div class="form-button-container">
-                        <div class="button button-purple">
-                            <div class="button-text button-text-white">Send</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-leaning-icon-container"> 
-                    <img src="assets/img/leaning-icon.svg">
-                </div>
-
-
-            </div>
-                
-                
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="HJ82P6ZLC74MJ">
-                <table>
-                <tr><td><input type="hidden" name="on0" value="Quantity">Quantity</td></tr><tr><td><select name="os0">
-                    <option value="1 Person">1 Person €90.00 EUR</option>
-                    <option value="2 People">2 People €180.00 EUR</option>
-                    <option value="4 People">4 People €324.00 EUR</option>
-                </select> </td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="EUR">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-    
-
-
-            <?php perch_shop_products(); ?>
             </div>
         </div>
         
-        <div class="section subtle-purple-section">
-            <div class="content">
-                
-                <?php perch_content('Testing Add To Cart')?>
-                
-                
-                
-                
-                <?php perch_shop_products(); ?>
-            </div>
-        </div>
-        
+
         
         
     </div>

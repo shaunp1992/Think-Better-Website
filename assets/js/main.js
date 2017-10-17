@@ -84,6 +84,37 @@ $(document).ready(function(){
             type: 'inline',
           
         });
+    
+    $('#pay-button-full').show(); 
+    $('#pay-button-half').hide();
+    $('#pay-button-pod').hide(); 
+   
+     $('#workshop-selection').on('change', function() {
+        $(".quantity-select").val($(".quantity-select option:first").val());    
+         $(".total-amount").html("")
+       if( this.value === "full" ){
+         $('#pay-button-full').show(); 
+         $('#pay-button-half').hide(); 
+         $('#pay-button-pod').hide(); 
+       }
+       else if( this.value === "half" ){
+         $('#pay-button-full').hide(); 
+         $('#pay-button-half').show(); 
+         $('#pay-button-pod').hide(); 
+       }
+       else if( this.value === "pod" ){
+         $('#pay-button-full').hide(); 
+         $('#pay-button-half').hide(); 
+         $('#pay-button-pod').show();
+       }
+       else{
+                                   
+       }  
+   })
+     
+     $('.quantity-select').on('change', function() {
+        $(".total-amount").html(this.value);
+     })
 
 });
 
