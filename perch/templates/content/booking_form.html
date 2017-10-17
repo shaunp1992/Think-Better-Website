@@ -9,10 +9,11 @@
 <div class="form-container">
     <div class="form">
         <div class="form-title">Booking Form</div>
-
+        
+        <perch:form id="booking" method="post" app="perch_forms">
         <div class="form-fields-container">
 
-            <perch:form id="booking" method="post" app="perch_forms">
+            
                <div class="form-input-container">
                     <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
                     <perch:error for="name" type="required">Please add your fullname</perch:error>
@@ -28,10 +29,8 @@
                     <input type="text" class="form-input" placeholder="Phone">
                 </div>
                 
-                <div class="form-button-container">
-                    <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
-                </div>
-            </perch:form> 
+               
+            
                 
 
             <div class="form-input-container select-list-input-container">
@@ -104,14 +103,19 @@
             </div>
 
 
+         <div class="form-button-container">
+                            <perch:input type="submit" id="submit" class="button button-purple" value="PERCH SEND" />
+                        </div>
+        </div><!--FORM END -->
+        </perch:form> 
 
-        </div>
-
+<!--
         <div class="form-button-container">
             <div class="button button-purple">
                 <div class="button-text button-text-white">Send</div>
             </div>
         </div>
+-->
     </div>
 
     <div class="form-leaning-icon-container"> 
