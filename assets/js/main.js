@@ -91,7 +91,10 @@ $(document).ready(function(){
    
      $('#workshop-selection').on('change', function() {
         $(".quantity-select").val($(".quantity-select option:first").val());    
-         $(".total-amount").html("")
+        $(".total-amount").html("");
+        
+        $("#workshop-details").val($("#workshop-selection option:selected").text()); 
+         
        if( this.value === "full" ){
          $('#pay-button-full').show(); 
          $('#pay-button-half').hide(); 
@@ -110,11 +113,11 @@ $(document).ready(function(){
        else{
                                    
        }  
-   })
+   });
      
      $('.quantity-select').on('change', function() {
         $(".total-amount").html(this.value);
-     })
+     });
 
 });
 
