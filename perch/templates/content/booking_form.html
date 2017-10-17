@@ -10,31 +10,20 @@
     <div class="form">
         <div class="form-title">Booking Form</div>
         
-<!--        <perch:form id="booking" method="post" app="perch_forms" action="https://www.paypal.com/cgi-bin/webscr" target="_top">-->
         <div class="form-fields-container">
-
             
-<!--
-               <div class="form-input-container">
-                    <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
-                    <perch:error for="name" type="required">Please add your fullname</perch:error>
-                </div>
-
-                <div class="form-input-container">
-                    <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
-                    <perch:error for="email" type="required">Please add your email address</perch:error>
-                    <perch:error for="email" type="format">Please check your email address</perch:error>
-                </div>
-
-                <div class="form-input-container">
-                    <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Phone" />
-                </div>
--->
-                
-               
+            <div class="form-input-container">
+                <input type="text" class="form-input" placeholder="Full Name">
+            </div>
             
-                
-
+            <div class="form-input-container">
+                <input type="text" class="form-input" placeholder="Email">
+            </div>
+            
+            <div class="form-input-container">
+                <input type="text" class="form-input" placeholder="Phone">
+            </div>
+            
             <div class="form-input-container select-list-input-container">
                 <select id="workshop-selection" class="form-select-list">
                   <option selected="selected" disabled>Pick a workshop</option>
@@ -44,26 +33,10 @@
                   <option value="pod">Workshop 1 hour - 21st October 2018</option>
                 </select>
             </div>
-
+            
             <div id="pay-button-full">
-               <perch:form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" app="perch_forms">
-                   
-                    <div class="form-input-container">
-                        <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
-                        <perch:error for="name" type="required">Please add your fullname</perch:error>
-                    </div>
-
-                    <div class="form-input-container">
-                        <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
-                        <perch:error for="email" type="required">Please add your email address</perch:error>
-                        <perch:error for="email" type="format">Please check your email address</perch:error>
-                    </div>
-
-                    <div class="form-input-container">
-                        <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Phone" />
-                    </div>
-                   
-                   
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="testvar" value="Testing">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="HJ82P6ZLC74MJ">
                     <input type="hidden" name="on0" value="Quantity">
@@ -81,37 +54,20 @@
                         <div class="total-text">Total: €</div>
                         <div class="total-amount"></div>
                     </div>
-
+                   
                     <div class="pay-button-container">
                         <input type="hidden" name="currency_code" value="EUR">
-                        <perch:input  type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </div>
-
-                </perch:form>
+                    
+                </form>
 
             </div>
 
 
             <div id="pay-button-half">
-                <perch:form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" app="perch_forms">
-                    
-                    <div class="form-input-container">
-                        <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
-                        <perch:error for="name" type="required">Please add your fullname</perch:error>
-                    </div>
-
-                    <div class="form-input-container">
-                        <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
-                        <perch:error for="email" type="required">Please add your email address</perch:error>
-                        <perch:error for="email" type="format">Please check your email address</perch:error>
-                    </div>
-
-                    <div class="form-input-container">
-                        <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Phone" />
-                    </div>
-                    
-                    
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="PMT2SFAW8WYYS">
                     <input type="hidden" name="on0" value="Quantity">
@@ -129,24 +85,16 @@
                         <div class="total-amount">0</div>
                     </div>
                     <input type="hidden" name="currency_code" value="EUR">
-                    <perch:input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </perch:form>
+                </form>
             </div>
 
             <div id="pay-button-pod">
                 <div>Pay on day Eur 30</div>
             </div>
-
-
-<!--
-         <div class="form-button-container">
-                            <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
-                        </div>
--->
-        </div><!--FORM END -->
-<!--        </perch:form> -->
-
+        </div>
+        
 <!--
         <div class="form-button-container">
             <div class="button button-purple">
@@ -155,8 +103,9 @@
         </div>
 -->
     </div>
-
+    
     <div class="form-leaning-icon-container"> 
         <img src="assets/img/leaning-icon.svg">
     </div>    
 </div>
+
