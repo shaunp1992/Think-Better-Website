@@ -46,7 +46,7 @@
             </div>
         </div>
         
-        <div class="section subtle-purple-section">
+       <!-- <div class="section subtle-purple-section">
             <div class="content">
                     <div class="form-container">
                         <div class="form">
@@ -152,7 +152,7 @@
                     </div>
 
             </div>
-        </div>
+        </div>-->
         
 
         <div class="section subtle-purple-section">
