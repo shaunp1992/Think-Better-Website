@@ -93,17 +93,20 @@ $(document).ready(function(){
         $(".quantity-select").val($(".quantity-select option:first").val());    
         $(".total-amount").html("");
         
-        $("#workshop-details").val($("#workshop-selection option:selected").text()); 
+        
+         
          
        if( this.value === "full" ){
          $('#pay-button-full').show(); 
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').hide(); 
+         $("#workshop-details-full").val($("#workshop-selection option:selected").text()); 
        }
        else if( this.value === "half" ){
          $('#pay-button-full').hide(); 
          $('#pay-button-half').show(); 
          $('#pay-button-pod').hide(); 
+         $("#workshop-details-half").val($("#workshop-selection option:selected").text()); 
        }
        else if( this.value === "pod" ){
          $('#pay-button-full').hide(); 
