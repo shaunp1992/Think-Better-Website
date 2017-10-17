@@ -1341,7 +1341,7 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
   -webkit-text-fill-color: #652877 !important;
 }
-form-select-list {
+.form-select-list {
   height: 36px;
   width: 100%;
   background: transparent;
