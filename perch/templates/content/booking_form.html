@@ -126,7 +126,7 @@
                     <div class="form-fields-container">
                         
                         <div class="form-input-container select-list-input-container">
-                            <perch:input type="select" id="price" required="true" label="Price" class="form-select-list quantity-select" value="!Number of People" options="!Number of People|null, 1 Person|30, 2 people|60"/>
+                            <perch:input type="select" id="price" required="true" label="Price" class="form-select-list quantity-select"  options="!Number of People|'', 1 Person|30, 2 People|60, 3 People|90, 4 People (10% Discount)|105, 5 People (10% Discount)|135, 6 People (10% Discount)|160" default="!Number of People"/>
                             <perch:error for="people" type="required">Select Number of People</perch:error>
                         </div>
                         
