@@ -102,7 +102,6 @@ $(document).ready(function(){
         $(".quantity-select").val($(".quantity-select option:first").val());    
         $(".total-amount").html("");
         
-         
        if( this.value === "full" ){
          $('#pay-button-full').show(); 
          $('#pay-button-half').hide(); 

@@ -1,4 +1,4 @@
-<div class="section-title-container">
+<div id="booking-form" class="section-title-container">
     <div class="section-title">Book</div>
     <div class="section-title-underline">
         <img src="assets/img/title-underline.svg">
@@ -114,6 +114,11 @@
                         <div class="total-text">Total: €</div>
                         <div class="total-amount">0</div>
                     </div>
+                    
+                    <div class="form-pay-when">
+                        <div class="pay-when-text">*Pay on day (Cash)</div>
+                    </div>
+                    
                     <input type="hidden" name="currency_code" value="EUR">
                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
@@ -156,12 +161,6 @@
                     <div class="form-button-container">
                         <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
                     </div>
-
-                    <perch:success>
-                        <div class="form-response-container container-title">
-                            Thank you for you message! We have received and respond as soon as possible. 
-                        </div>
-                    </perch:success>
                 </perch:form>
                 
                 
