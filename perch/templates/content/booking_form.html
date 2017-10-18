@@ -121,12 +121,56 @@
             </div>
 
             <div id="pay-button-pod">
-                <div>Pay on day Eur 30</div>
-                 <perch:form id="booking" method="post" app="perch_forms">
+                
+                <perch:form id="booking" method="post" app="perch_forms">
+                    <div class="form-fields-container">
+                        
+                        <div class="form-input-container">
+                            <perch:input type="select" id="people" required="true" label="People" class="form-select-list quantity-select" options="1 Person|30, 2 people|60"/>
+                            <perch:error for="people" type="required">Select Number of People</perch:error>
+                        </div>
+                        
+                        
+                        <div class="form-input-container">
+                            <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
+                            <perch:error for="name" type="required">Please add your fullname</perch:error>
+                        </div>
+
+                        <div class="form-input-container">
+                            <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
+                            <perch:error for="email" type="required">Please add your email address</perch:error>
+                            <perch:error for="email" type="format">Please check your email address</perch:error>
+                        </div>
+
+                        <div class="form-input-container">
+                            <perch:input type="text" id="phone" required="true" label="Phone" class="form-input" placeholder="Phone" />
+                            <perch:error for="phone" type="required">Please add your phone numbeer</perch:error>
+                        </div>
+
+                    </div>
+
+                    <div class="form-total">
+                        <div class="total-text">Total: €</div>
+                        <div class="total-amount">0</div>
+                    </div>
+                    
                     <div class="form-button-container">
                         <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
                     </div>
+
+                    <perch:success>
+                        <div class="form-response-container container-title">
+                            Thank you for you message! We have received and respond as soon as possible. 
+                        </div>
+                    </perch:success>
                 </perch:form>
+                
+                
+                
+                
+                
+                <div>Pay on day Eur 30</div>
+                 
             </div>
             
             
