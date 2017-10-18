@@ -96,7 +96,7 @@ $(document).ready(function(){
     $('#pay-button-full').show(); 
     $('#pay-button-half').hide();
     $('#pay-button-pod').hide(); 
-    $("#price").prepend('<option selected="selected" disabled=>Number of people</option>');
+    $(".perch-form-people-select").prepend('<option selected="selected" disabled=>Number of people</option>');
    
      $('#workshop-selection').on('change', function() {
         $(".quantity-select").val($(".quantity-select option:first").val());    
