@@ -63,9 +63,13 @@
                         <div class="total-amount"></div>
                     </div>
                    
+                    <div class="form-pay-when">
+                        <div class="pay-when-text">*Pay now online</div>
+                    </div>
+                    
                     <div id="pay-submit-container" class="pay-button-container">
                         <input type="hidden" name="currency_code" value="EUR">
-                        <input id="pay-submit" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <input id="pay-submit" type="image" src="assets/img/pay-button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </div>
                     
@@ -116,7 +120,7 @@
                     </div>
                     
                     <div class="form-pay-when">
-                        <div class="pay-when-text">*Pay on day (Cash)</div>
+                        <div class="pay-when-text">*Pay now online</div>
                     </div>
                     
                     <input type="hidden" name="currency_code" value="EUR">
@@ -157,8 +161,12 @@
                         <div class="total-amount">0</div>
                     </div>
                     
+                    <div class="form-pay-when">
+                        <div class="pay-when-text">*Pay on day (Cash please!)</div>
+                    </div>
+                    
                     <div class="form-button-container">
-                        <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
+                        <perch:input type="submit" id="submit" class="button button-purple" value="Book" />
                     </div>
                 </perch:form>
             </div>
