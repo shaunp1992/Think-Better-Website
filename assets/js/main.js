@@ -118,6 +118,7 @@ $(document).ready(function(){
          $('#pay-button-full').hide(); 
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').show();
+         $("#price").prepend('<option selected="selected" disabled="">Number of people</option>');
        }
        else{
                                    
