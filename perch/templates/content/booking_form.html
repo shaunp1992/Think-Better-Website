@@ -12,25 +12,6 @@
         
         <div class="form-fields-container">
             
-<!--
-            <perch:form id="booking" method="post" app="perch_forms">
-                <div class="form-input-container">
-                    <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
-                    <perch:error for="name" type="required">Please add your fullname</perch:error>
-                </div>
-
-                <div class="form-input-container">
-                    <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
-                    <perch:error for="email" type="required">Please add your email address</perch:error>
-                    <perch:error for="email" type="format">Please check your email address</perch:error>
-                </div>
-
-                <div class="form-input-container">
-                    <input type="text" class="form-input" placeholder="Phone">
-                </div>
-            </perch:form>
--->
-            
             <div class="form-input-container select-list-input-container">
                 <select id="workshop-selection" class="form-select-list">
                   <option selected="selected" disabled>Pick a workshop</option>
@@ -43,8 +24,7 @@
             
             <div id="pay-button-full">                
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    
-                    
+                
                     <input type="hidden" name="on1" value="Workshop Booked">
                     <input id="workshop-details-full" type="hidden" name="os1">
                     
@@ -54,13 +34,12 @@
                     <div class="form-input-container select-list-input-container">
                         <select name="os0" class="form-select-list quantity-select">
                             <option selected="selected" disabled>Number of people</option>
-                            <option value="90">1 Person</option>
-                            <option value="180">2 People</option>
-                            <option value="270">3 People</option>
-                            <option value="324">4 People (10% Off)</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People (10% Off)</option>
                         </select>
                     </div>
-                    
                     
                     <div class="form-input-container">
                         <input type="hidden" name="on2" value="Name">
@@ -69,7 +48,7 @@
             
                     <div class="form-input-container">
                         <input type="hidden" name="on3" value="Email">
-                        <input type="text" class="form-input" placeholder="Email" name="os3">
+                        <input type="email" class="form-input" placeholder="Email" name="os3">
                     </div>
             
                     <div class="form-input-container">
