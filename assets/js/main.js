@@ -84,8 +84,8 @@ $(document).ready(function(){
         type: 'inline',
 
     });
-
-    var show='<?php echo $disp_div; ?>';
+    
+    var show= "<?php echo $disp_div; ?>";
     console.log("Show is: " +  show);
     
     $('#booking-form-fields').show();
