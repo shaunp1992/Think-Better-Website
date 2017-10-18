@@ -80,18 +80,24 @@ $(document).ready(function(){
         }
     });
     
-      $('#home-header-video').magnificPopup({
-            type: 'inline',
-          
-        });
-    
-    $("#pay-submit").click(function() {
-        $("#booking").submit();
+    $('#home-header-video').magnificPopup({
+        type: 'inline',
+
     });
+
+    var show='<?php echo $disp_div; ?>';
     
-    $("#pay-submit-container").click(function() {
-        $("#booking").submit();
-    });
+    $('#booking-form-fields').show();
+    $('#booking-form-perch-success').hide();
+    
+    if(show==1){
+        $('#booking-form-fields').hide();
+        $('#booking-form-perch-success').show();
+    }
+    else if(show==2)
+    {
+        $('#div_search_rooms').show();
+    }
     
     $('#pay-button-full').show(); 
     $('#pay-button-half').hide();
