@@ -10,41 +10,37 @@
 <div class="form-container">
     <div class="form">
         <div class="form-title">Contact Form</div>
-        <perch:form id="contact" method="post" app="perch_forms">
-            <div class="form-fields-container">
+        <div id="contact-form-fields">
+            <perch:form id="contact" method="post" app="perch_forms">
+                <div class="form-fields-container">
 
-                <div class="form-input-container">
-                    <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
-                    <perch:error for="name" type="required">Please add your fullname</perch:error>
+                    <div class="form-input-container">
+                        <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
+                        <perch:error for="name" type="required">Please add your fullname</perch:error>
+                    </div>
+
+                    <div class="form-input-container">
+                        <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
+                        <perch:error for="email" type="required">Please add your email address</perch:error>
+                        <perch:error for="email" type="format">Please check your email address</perch:error>
+                    </div>
+
+                    <div class="form-input-container">
+                        <input type="text" class="form-input" placeholder="Phone">
+                    </div>
+
+                    <div class="form-input-container">
+                        <perch:input type="textarea" id="message" required="true" label="Message" rows="4" cols="50" class="form-input" placeholder="Message"/>
+                        <perch:error for="message" type="required">Please add a message</perch:error>
+                    </div>
+
                 </div>
 
-                <div class="form-input-container">
-                    <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
-                    <perch:error for="email" type="required">Please add your email address</perch:error>
-                    <perch:error for="email" type="format">Please check your email address</perch:error>
+                <div class="form-button-container">
+                    <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
                 </div>
-
-                <div class="form-input-container">
-                    <input type="text" class="form-input" placeholder="Phone">
-                </div>
-
-                <div class="form-input-container">
-                    <perch:input type="textarea" id="message" required="true" label="Message" rows="4" cols="50" class="form-input" placeholder="Message"/>
-                    <perch:error for="message" type="required">Please add a message</perch:error>
-                </div>
-
-            </div>
-            
-            <div class="form-button-container">
-                <perch:input type="submit" id="submit" class="button button-purple" value="Send" />
-            </div>
-
-            <perch:success>
-                <div class="form-response-container container-title">
-                    Thank you for you message! We have received and respond as soon as possible. 
-                </div>
-            </perch:success>
-        </perch:form>
+            </perch:form>
+        </div>
         
         
     </div>

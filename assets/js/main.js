@@ -30,7 +30,7 @@ $(document).ready(function(){
             var checkWidth = $(window).width();
             var demo = $(".services-container");
 
-            if (checkWidth > 991 && typeof demo.data('owlCarousel') != 'undefined') {
+            if (checkWidth > 991 && typeof demo.data('owlCarousel') !== 'undefined') {
                 demo.removeClass('owl-carousel');
 
                 $('.services-container').each(function() {
@@ -99,19 +99,33 @@ $(document).ready(function(){
             }
         }
     };
+     
+    var formContact = getUrlParameter('fc');
     
-    var form = getUrlParameter('fb');
+    $('#contact-form-fields').show();
+    $('#contact-form-perch-success').hide();
+    
+    if(formContact === 'phs'){
+        $('#contact-form-fields').hide();
+        $('#contact-form-perch-success').show();
+    }
+    else{
+        $('#contact-form-fields').show();
+        $('#contact-form-perch-success').hide();
+    }
+    
+    var formBooking = getUrlParameter('fb');
     
     $('#booking-form-fields').show();
     $('#booking-form-pay-success').hide();
     $('#booking-form-perch-success').hide();
     
-    if(form === 'pls'){
+    if(formBooking === 'pls'){
         $('#booking-form-fields').hide();
         $('#booking-form-pay-success').show();
         $('#booking-form-perch-success').hide();
     }
-    else if(form === 'phs'){
+    else if(formBooking === 'phs'){
         $('#booking-form-fields').hide();
         $('#booking-form-pay-success').hide();
         $('#booking-form-perch-success').show();
