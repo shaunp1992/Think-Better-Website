@@ -12,21 +12,22 @@
         
         <div class="form-fields-container">
             
-            
-            <div class="form-input-container">
-                <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
-                <perch:error for="name" type="required">Please add your fullname</perch:error>
-            </div>
+            <perch:form id="booking" method="post" app="perch_forms">
+                <div class="form-input-container">
+                    <perch:input type="text" id="name" required="true" label="Name" class="form-input" placeholder="Full Name" />
+                    <perch:error for="name" type="required">Please add your fullname</perch:error>
+                </div>
 
-            <div class="form-input-container">
-                <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
-                <perch:error for="email" type="required">Please add your email address</perch:error>
-                <perch:error for="email" type="format">Please check your email address</perch:error>
-            </div>
+                <div class="form-input-container">
+                    <perch:input type="email" id="email" required="true" label="Email" class="form-input" placeholder="Email" />
+                    <perch:error for="email" type="required">Please add your email address</perch:error>
+                    <perch:error for="email" type="format">Please check your email address</perch:error>
+                </div>
 
-            <div class="form-input-container">
-                <input type="text" class="form-input" placeholder="Phone">
-            </div>
+                <div class="form-input-container">
+                    <input type="text" class="form-input" placeholder="Phone">
+                </div>
+            </perch:form>
             
             <div class="form-input-container select-list-input-container">
                 <select id="workshop-selection" class="form-select-list">
@@ -38,9 +39,13 @@
                 </select>
             </div>
             
-            <div id="pay-button-full">
-                
+            <div id="pay-button-full">                
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    
+                    
+                    <input type="hidden" name="on1" value="Workshop Booked">
+                    <input id="workshop-details-full" type="hidden" name="os1">
+                    
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="HJ82P6ZLC74MJ">
                     <input type="hidden" name="on0" value="Quantity">
@@ -54,8 +59,21 @@
                         </select>
                     </div>
                     
-                    <input type="hidden" name="on1" value="Workshop Booked">
-                    <input id="workshop-details-full" type="hidden" name="os1">
+                    
+                    <div class="form-input-container">
+                        <input type="hidden" name="on2" value="Name">
+                        <input type="text" lass="form-input" placeholder="Full Name" name="os2">
+                    </div>
+            
+                    <div class="form-input-container">
+                        <input type="hidden" name="on3" value="Email">
+                        <input type="text" lass="form-input" placeholder="Email" name="os3">
+                    </div>
+            
+                    <div class="form-input-container">
+                        <input type="text" class="form-input" placeholder="Phone">
+                    </div>
+                    
 
                     <div class="form-total">
                         <div class="total-text">Total: €</div>
