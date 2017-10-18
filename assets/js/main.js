@@ -100,17 +100,25 @@ $(document).ready(function(){
         }
     };
     
-    var form = getUrlParameter('form');
+    var form = getUrlParameter('fb');
     
     $('#booking-form-fields').show();
+    $('#booking-form-pay-success').hide();
     $('#booking-form-perch-success').hide();
     
-    if(form === 'phs'){
+    if(form === 'pls'){
         $('#booking-form-fields').hide();
+        $('#booking-form-pay-success').show();
+        $('#booking-form-perch-success').hide();
+    }
+    else if(form === 'phs'){
+        $('#booking-form-fields').hide();
+        $('#booking-form-pay-success').hide();
         $('#booking-form-perch-success').show();
     }
     else{
         $('#booking-form-fields').show();
+        $('#booking-form-pay-success').hide();
         $('#booking-form-perch-success').hide();
     }
     
