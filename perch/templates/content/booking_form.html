@@ -57,7 +57,6 @@
                         <input type="hidden" name="on4" value="Phone">
                         <input type="text" class="form-input" placeholder="Phone" name="os4">
                     </div>
-                    
 
                     <div class="form-total">
                         <div class="total-text">Total: €</div>
@@ -74,24 +73,42 @@
 
             </div>
 
-
             <div id="pay-button-half">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    
+                    <input type="hidden" name="on1" value="Workshop Booked">
+                    <input id="workshop-details-half" type="hidden" name="os1">
+                    
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="PMT2SFAW8WYYS">
-                    <input type="hidden" name="on0" value="Quantity">
+                    <input type="hidden" name="on0" value="Price">
                     <div class="form-input-container select-list-input-container">
                         <select name="os0" class="form-select-list quantity-select">
                             <option selected="selected" disabled>Number of people</option>
                             <option value="45">1 Person</option>
                             <option value="90">2 People</option>
                             <option value="135">3 People</option>
-                            <option value="162">4 People (10% Off)</option>
+                            <option value="160">4 People (10% Off)</option>
+                            <option value="200">5 People (10% Off)</option>
+                            <option value="240">6 People (10% Off)</option>
+                            
                         </select>
                     </div>
                     
-                    <input type="hidden" name="on1" value="Workshop Booked">
-                    <input id="workshop-details-half" type="hidden" name="os1">
+                    <div class="form-input-container">
+                        <input type="hidden" name="on2" value="Name">
+                        <input type="text" class="form-input" placeholder="Full Name" name="os2">
+                    </div>
+            
+                    <div class="form-input-container">
+                        <input type="hidden" name="on3" value="Email">
+                        <input type="email" class="form-input" placeholder="Email" name="os3" required="true" autocomplete="email">
+                    </div>
+            
+                    <div class="form-input-container">
+                        <input type="hidden" name="on4" value="Phone">
+                        <input type="text" class="form-input" placeholder="Phone" name="os4">
+                    </div>
                     
                     <div class="form-total">
                         <div class="total-text">Total: €</div>
@@ -111,6 +128,8 @@
                     </div>
                 </perch:form>
             </div>
+            
+            
         </div>
         
 <!--
