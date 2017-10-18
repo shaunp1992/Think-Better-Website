@@ -86,6 +86,7 @@ $(document).ready(function(){
     });
 
     var show='<?php echo $disp_div; ?>';
+    console.log("Show is: " +  show);
     
     $('#booking-form-fields').show();
     $('#booking-form-perch-success').hide();
