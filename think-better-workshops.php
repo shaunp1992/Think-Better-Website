@@ -1,17 +1,5 @@
 <?php include('perch/runtime.php'); ?>
 
-<?php
-    $disp_div=0;
-    if(isset($_GET['phs']))
-    {
-       $disp_div=1;
-    }
-    else if(isset($_GET['pls']))
-    {
-      $disp_div=2;
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="">
 <head>

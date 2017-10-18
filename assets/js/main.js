@@ -84,20 +84,34 @@ $(document).ready(function(){
         type: 'inline',
 
     });
+
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
     
-    var show= "<?php echo $disp_div; ?>";
-    console.log("Show is: " +  show);
+    var form = getUrlParameter('form');
     
     $('#booking-form-fields').show();
     $('#booking-form-perch-success').hide();
     
-    if(show==1){
+    if(form === 'phs'){
         $('#booking-form-fields').hide();
         $('#booking-form-perch-success').show();
     }
-    else if(show==2)
-    {
-        $('#div_search_rooms').show();
+    else{
+        $('#booking-form-fields').show();
+        $('#booking-form-perch-success').hide();
     }
     
     $('#pay-button-full').show(); 
