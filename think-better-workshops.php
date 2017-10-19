@@ -38,9 +38,7 @@
                  
                  <div class="events-container owl-carousel owl-theme">
                         <?php include ( './components/event-card.php' ) ; ?>
-                        <?php include ( './components/event-card.php' ) ; ?>
-                        <?php include ( './components/event-card.php' ) ; ?>
-                        <?php include ( './components/event-card.php' ) ; ?>
+                        <?php perch_content('Event'); ?>
                  </div>
                 
             </div>
