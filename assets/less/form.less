@@ -51,7 +51,7 @@
     }
     
     .form-button-container {
-        margin-top: 40px;
+        margin-top: 0px;
         .flex();
         .justify-content(center);
     }
@@ -78,46 +78,60 @@ input:-webkit-autofill {
 }
 
 .form-select-list {
-     height: 36px;
-     width: 100%;
-     background: transparent;
-     border: none;
-     border-bottom: 2px solid #652877;
-     .amatic-font();
-     font-size: 24px;
-     font-weight: 700;
-     color: @purple;
-     margin-left: -4px;
-     cursor: pointer;
- }
-     
- .form-total{
-     .amatic-font();
-     font-size: 32px;
-     font-weight: 700;
-     color: @purple;
-     padding: 10px 0;
-     .flex();
-     .justify-content(flex-end);
-     
-     .total-amount{
-         min-width: 22px;
-     }
- }
- 
- .form-container{
-     .select-list-input-container{
+    height: 36px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #652877;
+    .amatic-font();
+    font-size: 24px;
+    font-weight: 700;
+    color: @purple;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+.form-total{
+    .amatic-font();
+    font-size: 32px;
+    font-weight: 700;
+    color: @purple;
+    padding: 10px 0;
+    .flex();
+    .justify-content(flex-end);
+
+    .total-amount{
+        min-width: 22px;
+    }
+}
+
+.form-container{
+    .select-list-input-container{
          overflow: hidden;
          .form-select-list{
              width: ~"calc(100% + 8px)";  
          }
-     }
- }
-  		  
- .pay-button-container {
-     display: flex;
-     justify-content: center;
- }
+    }
+}
+
+.pay-button-container {
+ .flex();
+ .justify-content(center);
+}
+
+#pay-submit {
+    width: 94px;
+    height: 38px;
+}
+
+.form-pay-when {
+    .amatic-font();
+    color: @purple;
+    text-align: right;
+    font-weight: 700;
+    margin-right: 22px;
+    font-size: 18px;
+}
 
 @media (max-width: 1280px){
    .form-container {
@@ -162,7 +176,7 @@ input:-webkit-autofill {
         }
 
         .form-button-container {
-            margin-top: 20px;
+            margin-top: 0px;
         }
     }
     
