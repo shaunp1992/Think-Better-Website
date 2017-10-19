@@ -1306,7 +1306,7 @@ body div {
   resize: none;
 }
 .form-container .form-button-container {
-  margin-top: 0px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1365,7 +1365,7 @@ input:-webkit-autofill {
   font-size: 32px;
   font-weight: 700;
   color: #652877;
-  padding: 10px 0;
+  padding: 10px 0 0;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1439,9 +1439,6 @@ input:-webkit-autofill {
   }
   .form-container .form-title {
     margin-bottom: 20px;
-  }
-  .form-container .form-button-container {
-    margin-top: 0px;
   }
 }
 .form-input:-ms-input-placeholder {
