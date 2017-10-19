@@ -173,7 +173,7 @@ $(document).ready(function(){
     
    $('.reset-form-button').click(function() {
        var newurl = window.location.href.split('?')[0];
-       window.location.href = newurl;
+       window.location.href = newurl + window.location.hash;
    });
 
 });
