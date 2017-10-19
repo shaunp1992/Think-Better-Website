@@ -143,7 +143,7 @@ $(document).ready(function(){
    
      $('#workshop-selection').on('change', function() {
         $(".quantity-select").val($(".quantity-select option:first").val());    
-        $(".total-amount").html("");
+        $(".total-amount").html("0");
         
        if( this.value === "full" ){
          $('#pay-button-full').show(); 
