@@ -43,6 +43,7 @@
                 <a href="about-think-better.php" class="nav-item">About</a>
                 <a class="nav-item">Blog</a>
                 <a href="contact.php" class="nav-item">Contact</a>
+                <a href="think-better-workshops.php#booking-form" class="nav-item">Book</a>
             </div>
 
         </div>
