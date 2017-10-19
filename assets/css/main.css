@@ -1410,7 +1410,6 @@ input:-webkit-autofill {
   color: #652877;
   text-align: right;
   font-weight: 700;
-  margin-right: 22px;
   font-size: 18px;
 }
 .form-discount-container {
@@ -1438,7 +1437,7 @@ input:-webkit-autofill {
   height: 160px;
 }
 .form-discount-container .form-discount-text {
-  z-index: 2;
+  z-index: 1;
   color: white;
   font-family: 'Amatic SC', cursive;
   -webkit-font-smoothing: auto;
@@ -1460,6 +1459,9 @@ input:-webkit-autofill {
   .form-container {
     max-width: 400px;
     padding: 40px 60px 60px;
+  }
+  .booking-form-container {
+    margin-top: 0px;
   }
   .form-leaning-icon-container {
     width: 150px;
