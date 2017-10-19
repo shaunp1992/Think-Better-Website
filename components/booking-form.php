@@ -2,13 +2,6 @@
     <div class="form">
         <div class="form-title">Booking Form</div>
         
-        <?php
-          perch_content_custom('Events', [
-            'page'=>'/think-better-workshops.php',
-            'template'=>'_booking-form-option.html',
-          ]);
-        ?>
-        
         <div id="booking-form-fields" class="form-fields-container form-content">
             
             <div class="form-input-container select-list-input-container">
@@ -18,6 +11,14 @@
                   <option value="half">Workshop Half Day - 18th October 2018</option>
                   <option value="full">Workshop Full Day - 20th October 2018</option>
                   <option value="pod">Workshop 1 hour - 21st October 2018</option>
+                    
+                  <?php
+                      perch_content_custom('Events', [
+                        'page'=>'/think-better-workshops.php',
+                        'template'=>'_booking-form-option.html',
+                      ]);
+                  ?>    
+                        
                 </select>
             </div>    
             
