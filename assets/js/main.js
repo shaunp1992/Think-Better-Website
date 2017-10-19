@@ -172,8 +172,8 @@ $(document).ready(function(){
    });
     
    $('.reset-form-button').click(function() {
-       var newurl = url.split('?')[0];
-       window.location.href= newurl;
+       var newurl = window.location.href.split('?')[0];
+       window.location.href = newurl;
    });
 
 });
