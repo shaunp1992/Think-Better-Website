@@ -1306,7 +1306,7 @@ body div {
   resize: none;
 }
 .form-container .form-button-container {
-  margin-top: 40px;
+  margin-top: 0px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1385,8 +1385,29 @@ input:-webkit-autofill {
   width: calc(100% + 8px);
 }
 .pay-button-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+}
+#pay-submit {
+  width: 94px;
+  height: 38px;
+}
+.form-pay-when {
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  color: #652877;
+  text-align: right;
+  font-weight: 700;
+  margin-right: 22px;
+  font-size: 18px;
 }
 @media (max-width: 1280px) {
   .form-container {
@@ -1420,7 +1441,7 @@ input:-webkit-autofill {
     margin-bottom: 20px;
   }
   .form-container .form-button-container {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
 .form-input:-ms-input-placeholder {
