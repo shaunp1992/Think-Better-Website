@@ -154,7 +154,7 @@
             </div>
         </div>-->
         
-
+        <span id="booking-form" class="anchor"></span>
         <div class="section subtle-purple-section">
             <div class="content">
                 <?php perch_content('Booking Form'); ?>
