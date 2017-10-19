@@ -167,9 +167,14 @@ $(document).ready(function(){
        }  
    });
      
-     $('.quantity-select').on('change', function() {
+   $('.quantity-select').on('change', function() {
         $(".total-amount").html(this.value);
-     });
+   });
+    
+   $('.reset-form-button').click(function() {
+       var newurl = url.split('?')[0];
+       window.location.href= newurl;
+   });
 
 });
 

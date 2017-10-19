@@ -1449,6 +1449,16 @@ input:-webkit-autofill {
   font-weight: 700;
   font-size: 18px;
 }
+.form-response-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
 .form-response-container .form-response-message {
   font-family: 'Amatic SC', cursive;
   -webkit-font-smoothing: auto;
@@ -1457,6 +1467,8 @@ input:-webkit-autofill {
   color: #652877;
   font-weight: 700;
   font-size: 28px;
+  text-align: center;
+  flex: 1;
 }
 @media (max-width: 1280px) {
   .form-container {
