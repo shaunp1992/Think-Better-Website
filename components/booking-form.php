@@ -3,9 +3,9 @@
         <div class="form-title">Booking Form</div>
         
         <?php
-          perch_content_custom('Test', [
+          perch_content_custom('Events', [
             'page'=>'/think-better-workshops.php',
-            'template'=>'booking-form-option.html',
+            'template'=>'_booking-form-option.html',
           ]);
         ?>
         
