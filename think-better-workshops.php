@@ -156,6 +156,7 @@
         <div class="section subtle-purple-section">
             <div class="content">
                 <?php perch_content('Booking Form'); ?>
+                <?php include ( './components/booking-form.php' ) ; ?>
             </div>
         </div>
         
