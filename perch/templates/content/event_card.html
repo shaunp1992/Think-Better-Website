@@ -1,6 +1,6 @@
-<div style="display:none"><perch:input id="workshop_type" type="radio" options="Full Day Workshop (€95)|full, Half Day Workshop (€45)|half, Mini Workshop (€30)|pod"/></div>
 
 <div class="event-card-container">
+    <perch:input id="workshop_type" type="radio" suppress="true" options="Full Day Workshop (€95)|full, Half Day Workshop (€45)|half, Mini Workshop (€30)|pod"/>
     <div class="event-card-time-place-container-desktop">
         <div class="event-card-date section-title"><perch:content id="event_month" type="select" label="Month" options="Jan, Feb, Mar" allowempty="false" required="true" /> <perch:content id="event_day" type="select" label="Day" options="1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, 10th, 11th, 12th" allowempty="false" required="true" /></div>
         
@@ -18,7 +18,7 @@
             <div class="price-text"><perch:content id="event_month" type="select" label="Month" options="Jan, Feb, Mar" allowempty="false" required="true" /> <perch:content id="event_day" type="select" label="Day" options="1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, 10th, 11th, 12th" allowempty="false" required="true" /> <perch:content id="event_start_hour" type="select" label="Starting Hour" options="00, 01, 02" allowempty="false" required="true" />:<perch:content id="event_start_minute" type="select" label="Starting Minute" options="00, 15, 30, 45" allowempty="false" required="true" /> - <perch:content id="event_end_hour" type="select" label="Ending Hour" options="00, 01, 02" allowempty="false" required="true" />:<perch:content id="event_end_minute" type="select" label="Ending Minute" options="00, 15, 30, 45" allowempty="false" required="true" /></div>
             <div class="text"><perch:content type="text" id="event_location" label="Event Location" /></div>
         </div>
-        <div class="event-card-title container-title"><perch:content type="text" id="event_title" label="Event Location" /></div>
+        <div class="event-card-title container-title"><perch:content type="text" id="event_title" label="Event Title" /></div>
         <div class="event-card-subtitle text"><perch:content type="text" id="event_subtitle" label="Event Subtitle" help="Keep it to a line or two"/></div>
         
         <div class="event-card-list list">
