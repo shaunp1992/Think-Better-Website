@@ -34,9 +34,9 @@
         
     </div>
     
-    <?php include ( './components/footer.php' ) ; ?>
+    <?php include ( '../components/footer.php' ) ; ?>
 
 </body>
     
-<?php include ( './common/common-body.php' ) ; ?>    
+<?php include ( '../common/common-body.php' ) ; ?>    
 </html>
