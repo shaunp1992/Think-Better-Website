@@ -21,7 +21,7 @@
                  
                  <?php 
                  
-                    $posts_per_page = 1;
+                    $posts_per_page = 10;
                     $template 		= 'post_in_list.html';
                     $sort_order		= 'DESC';
                     $sort_by		= 'postDateTime';
