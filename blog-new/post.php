@@ -1,4 +1,4 @@
-<?php include('perch/runtime.php'); ?>
+<?php include('./perch/runtime.php'); ?>
 
 <!DOCTYPE html>
 <html lang="">
@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Think Better Blog</title>
-    <?php include ( '../common/common-head.php' ) ; ?>
+    <?php include ( './common/common-head.php' ) ; ?>
     <meta charset="utf-8">
 	<?php perch_blog_post_meta(perch_get('s')); ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,9 +34,9 @@
         
     </div>
     
-    <?php include ( '../components/footer.php' ) ; ?>
+    <?php include ( './components/footer.php' ) ; ?>
 
 </body>
     
-<?php include ( '../common/common-body.php' ) ; ?>    
+<?php include ( './common/common-body.php' ) ; ?>    
 </html>
