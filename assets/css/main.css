@@ -1959,6 +1959,24 @@ button:focus {
 .blog-card-container:last-child {
   margin-bottom: 0px;
 }
+.blog-card-container .blog-card-title-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog-card-container .blog-card-title-container .blog-card-title {
+  text-decoration: none;
+}
+.blog-card-container .blog-card-title-container .entry-published.date {
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-weight: 700;
+  color: #652877;
+}
 .blog-card-container .blog-card-snippet-container {
   margin: 10px 0px 20px 0px;
   color: #652877;
@@ -1983,6 +2001,9 @@ button:focus {
   -webkit-justify-content: center;
   justify-content: center;
   margin: 40px 0 20px 0;
+}
+.hfeed listing {
+  list-style: none;
 }
 @media (max-width: 768px) {
   .blog-card-container:last-child {
