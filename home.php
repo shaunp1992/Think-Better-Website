@@ -14,6 +14,7 @@
     <?php include ( './components/navbar.php' ) ; ?>
     <?php perch_content('Header'); ?>
     
+    <span id="page" class="anchor"></span>
     <div class="page">
         
         <div class="section">
