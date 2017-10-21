@@ -24,9 +24,8 @@ $(document).ready(function(){
     
     $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-        console.log(this.offset());
-    if (this.hash !== "" && this.offset()) {
+    // Make sure this.hash has a value before overriding default behaviorå
+    if (this.hash !== "" && $(this.hash).offset()) {
       // Prevent default anchor click behavior
       event.preventDefault();
 
