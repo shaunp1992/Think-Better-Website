@@ -2009,6 +2009,9 @@ button:focus {
   justify-content: center;
   margin: 40px 0 20px 0;
 }
+.hfeed.listing {
+  padding: 0;
+}
 .paging {
   display: -webkit-box;
   display: -moz-box;
@@ -2035,9 +2038,11 @@ button:focus {
   text-decoration: none;
   color: #652877;
 }
-@media (max-width: 768px) {
-  .blog-card-container:last-child {
-    display: none;
+@media (max-width: 992px) {
+  .blog-card-container .blog-card-title-container {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
 }
 .picture-paragraph-container {
