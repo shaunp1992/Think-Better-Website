@@ -2043,6 +2043,9 @@ button:focus {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
   }
 }
 .picture-paragraph-container {
