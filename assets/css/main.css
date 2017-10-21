@@ -2009,6 +2009,27 @@ button:focus {
   justify-content: center;
   margin: 40px 0 20px 0;
 }
+.paging {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 80px;
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #652877;
+}
 @media (max-width: 768px) {
   .blog-card-container:last-child {
     display: none;
