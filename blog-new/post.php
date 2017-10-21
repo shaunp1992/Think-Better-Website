@@ -23,9 +23,7 @@
     <div class="page">
         <div class="section">
              <div class="content">
-                <?php perch_blog_post(perch_get('s')); ?>
-		    	<?php perch_blog_author_for_post(perch_get('s')); ?>
-                 
+                <?php perch_blog_post(perch_get('s')); ?>                 
             </div>
         </div>
             
