@@ -12,7 +12,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php" />
 	<?php perch_get_css(); ?>
-	<link rel="stylesheet" href="blog.css" type="text/css" />
 	<?php perch_blog_post_webmention_endpoint(perch_get('s')); ?>
 </head>
 

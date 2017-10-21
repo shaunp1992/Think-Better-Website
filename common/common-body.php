@@ -1,6 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/magnific-popup.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/magnific-popup.min.js"></script>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
@@ -30,4 +30,4 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<script src="assets/js/main-min.js"></script> 
+<script src="/assets/js/main-min.js"></script> 

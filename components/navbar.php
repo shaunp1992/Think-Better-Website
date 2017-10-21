@@ -3,7 +3,7 @@
             
             <div class="nav-bar-logo-container">
                 <a href="home.php">
-                    <img src="assets/img/logo-white.svg">
+                    <img src="/assets/img/logo-white.svg">
                 </a>
                 
             </div>
