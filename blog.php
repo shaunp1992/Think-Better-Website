@@ -17,7 +17,22 @@
     <div class="page">
         <div class="section">
              <div class="content">
-		      <?php perch_blog_recent_posts(1);?>
+		      
+                 
+                 <?php 
+                 
+                    $posts_per_page = 1;
+                    $template 		= 'post_in_list.html';
+                    $sort_order		= 'DESC';
+                    $sort_by		= 'postDateTime';
+                 
+                    perch_blog_custom([
+							'template'   => $template,
+							'count'      => $posts_per_page,
+							'sort'       => $sort_by,
+							'sort-order' => $sort_order,
+		                    ]);
+                ?>
             </div>
         </div>
             
