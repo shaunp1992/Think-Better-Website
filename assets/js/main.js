@@ -89,7 +89,6 @@ $(document).ready(function(){
         margin:10,
         nav:true,
         dots: true,
-        navText : ['<div class="carousel-arrow left-arrow" aria-hidden="true"><img src="/assets/img/left-arrow.svg"></div>','<div class="carousel-arrow right-arrow" aria-hidden="true"><img src="/assets/img/right-arrow.svg"></div>'],
         responsive:{
             0:{
                 items:1
