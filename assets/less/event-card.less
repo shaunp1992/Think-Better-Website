@@ -43,10 +43,6 @@
         .event-card-title{
              width: ~"calc(100% - 90px)";
         }
-        
-        .event-card-list{
-            .flex-position(1);
-        }
     }
 }
 .event-card-subtitle{
@@ -85,8 +81,10 @@
 }
 
 .event-card-button-container {
-    display: flex;
-    justify-content: flex-end;
+    .flex();
+    .justify-content(flex-end);
+    .flex-position(1);
+    .align-items(flex-end);
     margin-top: 10px;
 }
 

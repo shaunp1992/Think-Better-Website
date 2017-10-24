@@ -1850,15 +1850,6 @@ button:focus {
 .event-card-container .event-card-details .event-card-title {
   width: calc(100% - 90px);
 }
-.event-card-container .event-card-details .event-card-list {
-  -webkit-box-flex: 1;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  /* For old syntax, otherwise collapses. */
-  -webkit-flex: 1;
-  /* Safari 6.1+. iOS 7.1+, BB10 */
-  -ms-flex: 1;
-  /* IE 10 */
-}
 .event-card-subtitle {
   margin: 5px 0 10px 0;
 }
@@ -1901,8 +1892,24 @@ button:focus {
   font-size: 12px;
 }
 .event-card-button-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
   justify-content: flex-end;
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 1;
+  /* IE 10 */
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
   margin-top: 10px;
 }
 .event-card-time-place-container-mobile {
