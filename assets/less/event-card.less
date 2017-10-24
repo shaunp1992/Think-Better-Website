@@ -38,11 +38,15 @@
     .event-card-details{
         width: 70%;
         padding: 25px;
+        .flex();
+        .flex-direction(column);
         .event-card-title{
              width: ~"calc(100% - 90px)";
         }
-           
-
+        
+        .event-card-list{
+            .flex-position(1);
+        }
     }
 }
 .event-card-subtitle{
