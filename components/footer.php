@@ -2,8 +2,11 @@
     <div class="footer-content nav-footer-content">
         <div class="footer-contact-section footer-section">
             <div class="footer-section-title">Contact Us:</div>
-            <div class="footer-section-item">Phone: 087 9678149</div>
-            <div class="footer-section-item">Email: info@thinkbetter.ie</div>
+            <?php perch_content_custom('Contact Details', array(
+                                    'page'=>'/contact.php',
+                                    'template' => '_footer_contact_details.html',
+                        )); 
+                     ?>
         </div>
         <div class="footer-socials-section footer-section">
             <div class="footer-section-title">Follow Us:</div>
@@ -24,12 +27,6 @@
                      <img class="footer-social-icon" src="assets/img/youtube-icon.svg">
                 </div>
 -->
-                
-                <?php perch_content_custom('Events', array(
-                                    'page'=>'/think-better-workshops.php',
-                                    'template' => 'event_card.html',
-                        )); 
-                     ?>
             </div>
         </div>
         <div class="footer-copyright-section footer-section">
