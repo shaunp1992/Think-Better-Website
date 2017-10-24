@@ -1901,10 +1901,10 @@ button:focus {
   padding: 0 55px;
 }
 .owl-nav .owl-theme .owl-nav [class*=owl-] {
-  background: none;
+  background: none !important;
 }
 .owl-nav .owl-theme .owl-nav [class*=owl-]:hover {
-  background: none;
+  background: none !important;
 }
 .owl-nav .carousel-arrow img {
   width: 32px;
