@@ -7,11 +7,6 @@
             <div class="form-input-container select-list-input-container">
                 <select id="workshop-selection" class="form-select-list" required="true">
                   <option selected="selected" disabled value="">Pick a workshop</option>
-                  <option value="full">Workshop Full Day - 17th October 2018</option>
-                  <option value="half">Workshop Half Day - 18th October 2018</option>
-                  <option value="full">Workshop Full Day - 20th October 2018</option>
-                  <option value="pod">Workshop 1 hour - 21st October 2018</option>
-                    
                   <?php
                       perch_content_custom('Events', [
                         'page'=>'/think-better-workshops.php',
