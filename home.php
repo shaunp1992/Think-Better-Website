@@ -59,8 +59,12 @@
                  </div>
                  
                 <div class="blog-cards-container">
-                   <?php include ( './components/blog-card.php' ) ; ?>
-                   <?php include ( './components/blog-card.php' ) ; ?>
+                   <?php perch_blog_custom([
+                        'template'   => 'post_in_list.html',
+                        'count'      => 2,
+                        'sort'       => 'postDateTime',
+                        'sort-order' => 'DESC',
+		           ]);?>
                  </div> 
                  
                  <div class="blog-cards-view-all-container">

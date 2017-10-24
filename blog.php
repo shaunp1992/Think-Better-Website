@@ -17,22 +17,12 @@
     <div class="page">
         <div class="section">
              <div class="content">
-		      
-                 
-                 <?php 
-                 
-                    $posts_per_page = 10;
-                    $template 		= 'post_in_list.html';
-                    $sort_order		= 'DESC';
-                    $sort_by		= 'postDateTime';
-                 
-                    perch_blog_custom([
-							'template'   => $template,
-							'count'      => $posts_per_page,
-							'sort'       => $sort_by,
-							'sort-order' => $sort_order,
-		                    ]);
-                ?>
+                 <?php perch_blog_custom([
+                        'template'   => 'post_in_list.html',
+                        'count'      => 10,
+                        'sort'       => 'postDateTime',
+                        'sort-order' => 'DESC',
+		          ]);?>
             </div>
         </div>
             
