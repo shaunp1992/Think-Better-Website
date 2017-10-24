@@ -1923,6 +1923,16 @@ button:focus {
   height: 100%;
   z-index: 0;
 }
+.events-word-background .header-background-word {
+  position: absolute;
+  font-size: 18px;
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  color: white;
+  opacity: 0.75;
+}
 .events-word-background .header-background-word:nth-child(1) {
   top: 15%;
   left: 10%;
