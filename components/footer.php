@@ -24,6 +24,12 @@
                      <img class="footer-social-icon" src="assets/img/youtube-icon.svg">
                 </div>
 -->
+                
+                <?php perch_content_custom('Events', array(
+                                    'page'=>'/think-better-workshops.php',
+                                    'template' => 'event_card.html',
+                        )); 
+                     ?>
             </div>
         </div>
         <div class="footer-copyright-section footer-section">
