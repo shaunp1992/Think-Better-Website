@@ -1890,6 +1890,9 @@ button:focus {
 .event-card-time-place-container-mobile {
   display: none;
 }
+.owl-stage {
+  cursor: pointer;
+}
 .owl-nav .owl-prev {
   left: 50px;
 }
@@ -1898,6 +1901,7 @@ button:focus {
 }
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
+  position: absolute;
   background: none !important;
   top: 35% !important;
   z-index: 2;

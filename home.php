@@ -31,6 +31,14 @@
         
         <div class="section purple-section">
              <div class="content">
+                 <div class="header-word-background">
+                    <div class="header-background-word">Well Being</div>
+                    <div class="header-background-word">Refocus</div>
+                    <div class="header-background-word">Self Acceptance</div>
+                    <div class="header-background-word">Resilience</div>
+                    <div class="header-background-word">Communication</div>
+                    <div class="header-background-word">Best Self</div>
+                </div>
                 <div class="section-title-container">
                     <div class="section-title section-title-white">Upcoming Events</div>
                     <div class="section-title-underline">
