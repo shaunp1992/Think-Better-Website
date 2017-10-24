@@ -60,7 +60,7 @@
                  
                 <div class="blog-cards-container">
                    <?php perch_blog_custom([
-                        'template'   => 'post_in_list.html',
+                        'template'   => 'post_in_list_home.html',
                         'count'      => 2,
                         'sort'       => 'postDateTime',
                         'sort-order' => 'DESC',
@@ -68,9 +68,9 @@
                  </div> 
                  
                  <div class="blog-cards-view-all-container">
-                    <div class="button button-purple">
+                    <a href="/blog.php" class="button button-purple">
                         <div class="button-text button-text-white">View All</div>
-                    </div>
+                    </a>
                  </div>
               
 
