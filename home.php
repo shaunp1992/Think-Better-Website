@@ -45,7 +45,7 @@
                      
                      <?php perch_content_custom('Events', array(
                                     'page'=>'/think-betterworkshops.php',
-                                    'template' => 'event_cards.html',
+                                    'template' => 'event_card.html',
                         )); 
                      ?>
                  </div>
