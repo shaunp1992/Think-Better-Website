@@ -1900,9 +1900,17 @@ button:focus {
   justify-content: space-between;
   padding: 0 55px;
 }
+.owl-nav .owl-prev {
+  left: 50px;
+}
+.owl-nav .owl-next {
+  right: 50px;
+}
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
   background: none !important;
+  top: 35% !important;
+  z-index: 2;
 }
 .owl-nav .owl-prev:hover,
 .owl-nav .owl-next:hover {

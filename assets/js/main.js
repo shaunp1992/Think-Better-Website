@@ -85,6 +85,7 @@ $(document).ready(function(){
     }
     
     $('.events-container').owlCarousel({
+        margin:10,
         nav: true,
         dots: true,
         loop:false,
