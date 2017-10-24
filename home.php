@@ -39,10 +39,15 @@
                 </div>
                  
                  <div class="events-container owl-carousel owl-theme">
-                        <?php include ( './components/event-card.php' ) ; ?>
-                        <?php include ( './components/event-card.php' ) ; ?>
-                        <?php include ( './components/event-card.php' ) ; ?>
-                        <?php include ( './components/event-card.php' ) ; ?>
+                    <?php perch_blog_custom([
+                            'template'   => 'event_cards.html',
+		            ]);?>
+                     
+                     <?php perch_content_custom('Events', array(
+                                    'page'=>'/think-betterworkshops.php',
+                                    'template' => 'event_cards.html',
+                        )); 
+                     ?>
                  </div>
                 
             </div>

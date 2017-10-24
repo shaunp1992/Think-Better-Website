@@ -17,6 +17,7 @@
     <div class="page">
         <div class="section">
              <div class="content">
+                 <?php perch_content('Section Title'); ?>
                  <?php perch_blog_custom([
                         'template'   => 'post_in_list.html',
                         'count'      => 10,
