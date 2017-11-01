@@ -183,7 +183,7 @@ $(document).ready(function(){
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').hide(); 
          $('#pay-button-pod-two').hide(); 
-         $("#workshop-details-full").val($("#workshop-selection option:selected").text()); 
+         $("#workshop-details-full-two").val($("#workshop-selection option:selected").text()); 
        }
        else if( this.value === "half" ){
          $('#pay-button-full').hide(); 
