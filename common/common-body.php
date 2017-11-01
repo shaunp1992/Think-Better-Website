@@ -30,4 +30,5 @@ window.fbAsyncInit = function() {
  }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<script src="/assets/js/main-min.js"></script> 
+<!--<script src="/assets/js/main-min.js"></script> -->
+<script src="/assets/js/main.js"></script>

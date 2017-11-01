@@ -161,6 +161,7 @@ $(document).ready(function(){
     $('#pay-button-full').show(); 
     $('#pay-button-half').hide();
     $('#pay-button-pod').hide(); 
+    $('#pay-button-pod-two').hide(); 
     $(".perch-form-people-select").prepend('<option selected="selected" disabled value="">Number of people</option>');
    
      $('#workshop-selection').on('change', function() {
@@ -171,18 +172,27 @@ $(document).ready(function(){
          $('#pay-button-full').show(); 
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').hide(); 
+         $('#pay-button-pod-two').hide(); 
          $("#workshop-details-full").val($("#workshop-selection option:selected").text()); 
        }
        else if( this.value === "half" ){
          $('#pay-button-full').hide(); 
          $('#pay-button-half').show(); 
          $('#pay-button-pod').hide(); 
+         $('#pay-button-pod-two').hide(); 
          $("#workshop-details-half").val($("#workshop-selection option:selected").text()); 
        }
        else if( this.value === "pod" ){
          $('#pay-button-full').hide(); 
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').show();
+         $('#pay-button-pod-two').hide();
+       }
+       else if( this.value === "pod-two" ){
+         $('#pay-button-full').hide(); 
+         $('#pay-button-half').hide(); 
+         $('#pay-button-pod').hide();
+         $('#pay-button-pod-two').show();
        }
        else{
                                    
