@@ -432,7 +432,7 @@ body div {
   -moz-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   color: white;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .header-word-background .header-background-word:nth-child(1) {
   top: 35%;
@@ -1958,7 +1958,7 @@ button:focus {
   -moz-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   color: white;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .events-word-background .header-background-word:nth-child(1) {
   top: 15%;
