@@ -31,8 +31,8 @@
              <div class="content events-content">
                  <div class="events-word-background">
                     <div class="header-background-word">Well Being</div>
-                    <div class="header-background-word">Refocus</div>
-                    <div class="header-background-word">Self Acceptance</div>
+                    <div class="header-background-word">Powerful Thinking</div>
+                    <div class="header-background-word">Self Management </div>
                     <div class="header-background-word">Resilience</div>
                 </div>
                 <div class="section-title-container">
