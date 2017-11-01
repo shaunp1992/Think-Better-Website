@@ -159,6 +159,7 @@ $(document).ready(function(){
     }
     
     $('#pay-button-full').show(); 
+    $('#pay-button-full-two').hide(); 
     $('#pay-button-half').hide();
     $('#pay-button-pod').hide(); 
     $('#pay-button-pod-two').hide(); 
@@ -169,7 +170,16 @@ $(document).ready(function(){
         $(".total-amount").html("0");
         
        if( this.value === "full" ){
-         $('#pay-button-full').show(); 
+         $('#pay-button-full').show();
+         $('#pay-button-full-two').hide(); 
+         $('#pay-button-half').hide(); 
+         $('#pay-button-pod').hide(); 
+         $('#pay-button-pod-two').hide(); 
+         $("#workshop-details-full").val($("#workshop-selection option:selected").text()); 
+       }
+       else if( this.value === "full-two" ){
+         $('#pay-button-full').hide();
+         $('#pay-button-full-two').show(); 
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').hide(); 
          $('#pay-button-pod-two').hide(); 
@@ -177,6 +187,7 @@ $(document).ready(function(){
        }
        else if( this.value === "half" ){
          $('#pay-button-full').hide(); 
+         $('#pay-button-full-two').hide(); 
          $('#pay-button-half').show(); 
          $('#pay-button-pod').hide(); 
          $('#pay-button-pod-two').hide(); 
@@ -184,12 +195,14 @@ $(document).ready(function(){
        }
        else if( this.value === "pod" ){
          $('#pay-button-full').hide(); 
+         $('#pay-button-full-two').hide(); 
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').show();
          $('#pay-button-pod-two').hide();
        }
        else if( this.value === "pod-two" ){
-         $('#pay-button-full').hide(); 
+         $('#pay-button-full').hide();
+         $('#pay-button-full-two').hide(); 
          $('#pay-button-half').hide(); 
          $('#pay-button-pod').hide();
          $('#pay-button-pod-two').show();

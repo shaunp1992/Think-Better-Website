@@ -1,6 +1,6 @@
 
 <div class="event-card-container">
-    <perch:content id="workshop_type" type="radio" suppress="true" label="Workshop Type"  options="Full Day Workshop (€95)|full, Half Day Workshop (€45)|half, Mini Workshop (€20)|pod, Mini Workshop Two(€25)|pod-two"/>
+    <perch:content id="workshop_type" type="radio" suppress="true" label="Workshop Type"  options="Full Day Workshop (€95)|full, Full Day Workshop Two (€80)|full-two, Half Day Workshop (€45)|half, Mini Workshop (€20)|pod, Mini Workshop Two(€25)|pod-two"/>
     
     <div class="event-card-time-place-container-desktop">
         <div class="event-card-date section-title"><perch:content id="event_month" type="select" label="Month" options="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec" allowempty="false" required="true" /> <perch:content id="event_day" type="select" label="Day" options="1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, 10th, 11th, 12th, 13th, 14th, 15th, 16th, 17th, 18th, 19th, 20th, 21st, 22nd, 23rd, 24th, 25th, 26th, 27th, 28th, 29th, 30th, 31st" allowempty="false" required="true" /></div>
@@ -35,7 +35,7 @@
         </div>
         
         <div class="event-price">
-            <div class="price-text">Price: <perch:if id="workshop_type" value="full" match="eq">€95</perch:if><perch:if id="workshop_type" value="half" match="eq">€45</perch:if><perch:if id="workshop_type" value="pod" match="eq">€30</perch:if> pp</div>
+            <div class="price-text">Price: <perch:if id="workshop_type" value="full" match="eq">€95</perch:if><perch:if id="workshop_type" value="full-two" match="eq">€80</perch:if><perch:if id="workshop_type" value="half" match="eq">€45</perch:if><perch:if id="workshop_type" value="pod" match="eq">€20</perch:if><perch:if id="workshop_type" value="pod-two" match="eq">€25</perch:if> pp</div>
             <div class="discount-text">Group discounts available</div>
         </div>
     </div>
